@@ -4537,6 +4537,34 @@
           "lib/net9.0/TimeZoneConverter.dll": {}
         }
       },
+      "Toltek/2.9.0": {
+        "dependencies": {
+          "Humanizer": "2.14.1",
+          "Microsoft.Extensions.Caching.Memory": "9.0.3",
+          "Microsoft.Extensions.Configuration.CommandLine": "9.0.3",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "9.0.3",
+          "Microsoft.Extensions.Configuration.UserSecrets": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection": "9.0.3",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Localization": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3",
+          "Nito.AsyncEx.Context": "5.1.2",
+          "Toltek.Core": "2.9.0",
+          "Toltek.Localization.Core": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.dll": {}
+        }
+      },
       "Toltek.AspNetCore/2.9.0": {
         "dependencies": {
           "DeviceDetector.NET": "6.4.2",
@@ -4755,6 +4783,102 @@
           "lib/net9.0/Toltek.AutoMapper.dll": {}
         }
       },
+      "Toltek.Bbb/0.0.3": {
+        "dependencies": {
+          "Toltek.AutoMapper": "2.9.0",
+          "Toltek.Bbb.Models": "0.0.3"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.dll": {}
+        }
+      },
+      "Toltek.Bbb.ApiClient/0.0.3": {
+        "dependencies": {
+          "RestSharp": "106.15.0",
+          "System.Xml.XDocument": "4.3.0",
+          "Toltek": "2.9.0",
+          "Toltek.Bbb.ApiModels": "0.0.3"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.ApiClient.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.ApiClient.dll": {}
+        }
+      },
+      "Toltek.Bbb.ApiModels/0.0.3": {
+        "dependencies": {
+          "Toltek.Core": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.ApiModels.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.ApiModels.dll": {}
+        }
+      },
+      "Toltek.Bbb.HttpApi/0.0.3": {
+        "dependencies": {
+          "Toltek.AspNetCore.DataTables": "2.9.0",
+          "Toltek.AspNetCore.Tasking": "2.9.0",
+          "Toltek.Bbb": "0.0.3",
+          "Toltek.Bbb.ApiClient": "0.0.3",
+          "Toltek.Platform.AspNetCore": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.HttpApi.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.HttpApi.dll": {}
+        }
+      },
+      "Toltek.Bbb.Models/0.0.3": {
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "System.Text.Json": "9.0.3",
+          "Toltek.Core": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.Models.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.Models.dll": {}
+        }
+      },
+      "Toltek.Bbb.Postgres/0.0.3": {
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Toltek.Bbb": "0.0.3",
+          "Toltek.Ef": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Bbb.Postgres.dll": {
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Bbb.Postgres.dll": {}
+        }
+      },
       "Toltek.Caching/2.9.0": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "9.0.3",
@@ -4782,6 +4906,23 @@
         },
         "compile": {
           "lib/net9.0/Toltek.Charts.dll": {}
+        }
+      },
+      "Toltek.Core/2.9.0": {
+        "dependencies": {
+          "JetBrains.Annotations": "2024.3.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3",
+          "Nito.AsyncEx.Context": "5.1.2"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Core.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Core.dll": {}
         }
       },
       "Toltek.Data/2.9.0": {
@@ -4827,6 +4968,43 @@
         },
         "compile": {
           "lib/net9.0/Toltek.Domain.dll": {}
+        }
+      },
+      "Toltek.Ef/2.9.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
+          "System.Linq.Dynamic.Core": "1.6.0.2",
+          "Toltek.AutoMapper": "2.9.0",
+          "Toltek.Data": "2.9.0",
+          "Toltek.Domain": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Ef.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Ef.dll": {}
+        }
+      },
+      "Toltek.Identity/2.9.0": {
+        "dependencies": {
+          "Duende.IdentityModel": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Identity.Stores": "9.0.3",
+          "Toltek.Auditing.Contracts": "2.9.0",
+          "Toltek.Security": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Identity.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Identity.dll": {}
         }
       },
       "Toltek.Localization/2.9.0": {
@@ -4918,6 +5096,39 @@
         },
         "compile": {
           "lib/net9.0/Toltek.Platform.dll": {}
+        }
+      },
+      "Toltek.Platform.AspNetCore/2.9.0": {
+        "dependencies": {
+          "Duende.IdentityModel": "7.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "9.0.3",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "9.0.3",
+          "Microsoft.AspNetCore.OpenApi": "9.0.3",
+          "Microsoft.Extensions.Caching.Hybrid": "9.3.0",
+          "Microsoft.Extensions.Http.Resilience": "9.3.0",
+          "Microsoft.Extensions.ServiceDiscovery": "9.1.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.2",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
+          "Serilog.Sinks.Seq": "9.0.0",
+          "System.Text.Json": "9.0.3",
+          "Toltek.AspNetCore.HealthChecks": "2.9.0",
+          "Toltek.AspNetCore.Localization": "2.9.0",
+          "Toltek.AspNetCore.OpenTelemetry": "2.9.0",
+          "Toltek.AspNetCore.Storage": "2.9.0",
+          "Toltek.AspNetCore.Swashbuckle": "2.9.0",
+          "Toltek.Caching": "2.9.0",
+          "Toltek.Identity": "2.9.0",
+          "Toltek.Platform": "2.9.0"
+        },
+        "runtime": {
+          "lib/net9.0/Toltek.Platform.AspNetCore.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/Toltek.Platform.AspNetCore.dll": {}
         }
       },
       "Toltek.Security/2.9.0": {
@@ -5017,217 +5228,6 @@
         },
         "compile": {
           "lib/net7.0/ZstdSharp.dll": {}
-        }
-      },
-      "Toltek/2.9.0": {
-        "dependencies": {
-          "Humanizer": "2.14.1",
-          "Microsoft.Extensions.Caching.Memory": "9.0.3",
-          "Microsoft.Extensions.Configuration.CommandLine": "9.0.3",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "9.0.3",
-          "Microsoft.Extensions.Configuration.UserSecrets": "9.0.3",
-          "Microsoft.Extensions.DependencyInjection": "9.0.3",
-          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Hosting.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Localization": "9.0.3",
-          "Microsoft.Extensions.Logging": "9.0.3",
-          "Microsoft.Extensions.Options": "9.0.3",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3",
-          "Nito.AsyncEx.Context": "5.1.2",
-          "Toltek.Core": "2.9.0",
-          "Toltek.Localization.Core": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.dll": {
-            "assemblyVersion": "2.9.0.0",
-            "fileVersion": "2.9.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.dll": {}
-        }
-      },
-      "Toltek.Bbb/0.0.3": {
-        "dependencies": {
-          "Toltek.AutoMapper": "2.9.0",
-          "Toltek.Bbb.Models": "0.0.3"
-        },
-        "runtime": {
-          "Toltek.Bbb.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.dll": {}
-        }
-      },
-      "Toltek.Bbb.ApiClient/0.0.3": {
-        "dependencies": {
-          "RestSharp": "106.15.0",
-          "System.Xml.XDocument": "4.3.0",
-          "Toltek": "2.9.0",
-          "Toltek.Bbb.ApiModels": "0.0.3"
-        },
-        "runtime": {
-          "Toltek.Bbb.ApiClient.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.ApiClient.dll": {}
-        }
-      },
-      "Toltek.Bbb.ApiModels/0.0.3": {
-        "dependencies": {
-          "Toltek.Core": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Bbb.ApiModels.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.ApiModels.dll": {}
-        }
-      },
-      "Toltek.Bbb.HttpApi/0.0.3": {
-        "dependencies": {
-          "Toltek.AspNetCore.DataTables": "2.9.0",
-          "Toltek.AspNetCore.Tasking": "2.9.0",
-          "Toltek.Bbb": "0.0.3",
-          "Toltek.Bbb.ApiClient": "0.0.3",
-          "Toltek.Platform.AspNetCore": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Bbb.HttpApi.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.HttpApi.dll": {}
-        }
-      },
-      "Toltek.Bbb.Models/0.0.3": {
-        "dependencies": {
-          "AutoMapper": "14.0.0",
-          "System.Text.Json": "9.0.3",
-          "Toltek.Core": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Bbb.Models.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.Models.dll": {}
-        }
-      },
-      "Toltek.Bbb.Postgres/0.0.3": {
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "Toltek.Bbb": "0.0.3",
-          "Toltek.Ef": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Bbb.Postgres.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
-          }
-        },
-        "compile": {
-          "Toltek.Bbb.Postgres.dll": {}
-        }
-      },
-      "Toltek.Core/2.9.0": {
-        "dependencies": {
-          "JetBrains.Annotations": "2024.3.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3",
-          "Nito.AsyncEx.Context": "5.1.2"
-        },
-        "runtime": {
-          "Toltek.Core.dll": {
-            "assemblyVersion": "2.9.0.0",
-            "fileVersion": "2.9.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Core.dll": {}
-        }
-      },
-      "Toltek.Ef/2.9.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "System.Linq.Dynamic.Core": "1.6.0.2",
-          "Toltek.AutoMapper": "2.9.0",
-          "Toltek.Data": "2.9.0",
-          "Toltek.Domain": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Ef.dll": {
-            "assemblyVersion": "2.9.0.0",
-            "fileVersion": "2.9.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Ef.dll": {}
-        }
-      },
-      "Toltek.Identity/2.9.0": {
-        "dependencies": {
-          "Duende.IdentityModel": "7.0.0",
-          "Microsoft.EntityFrameworkCore.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Identity.Stores": "9.0.3",
-          "Toltek.Auditing.Contracts": "2.9.0",
-          "Toltek.Security": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Identity.dll": {
-            "assemblyVersion": "2.9.0.0",
-            "fileVersion": "2.9.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Identity.dll": {}
-        }
-      },
-      "Toltek.Platform.AspNetCore/2.9.0": {
-        "dependencies": {
-          "Duende.IdentityModel": "7.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "9.0.3",
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "9.0.3",
-          "Microsoft.AspNetCore.OpenApi": "9.0.3",
-          "Microsoft.Extensions.Caching.Hybrid": "9.3.0",
-          "Microsoft.Extensions.Http.Resilience": "9.3.0",
-          "Microsoft.Extensions.ServiceDiscovery": "9.1.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.2",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
-          "Serilog.Sinks.Seq": "9.0.0",
-          "System.Text.Json": "9.0.3",
-          "Toltek.AspNetCore.HealthChecks": "2.9.0",
-          "Toltek.AspNetCore.Localization": "2.9.0",
-          "Toltek.AspNetCore.OpenTelemetry": "2.9.0",
-          "Toltek.AspNetCore.Storage": "2.9.0",
-          "Toltek.AspNetCore.Swashbuckle": "2.9.0",
-          "Toltek.Caching": "2.9.0",
-          "Toltek.Identity": "2.9.0",
-          "Toltek.Platform": "2.9.0"
-        },
-        "runtime": {
-          "Toltek.Platform.AspNetCore.dll": {
-            "assemblyVersion": "2.9.0.0",
-            "fileVersion": "2.9.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Platform.AspNetCore.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/9.0.0.0": {
@@ -8937,6 +8937,13 @@
       "path": "timezoneconverter/7.0.0",
       "hashPath": "timezoneconverter.7.0.0.nupkg.sha512"
     },
+    "Toltek/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PLOGO8TaTGwPpcNL8s62vCvJrvkA8o8TLSJz6ItRc/cbAfzzljdeD1xhKwZ+B+ylfDcujx+T5Ol+BuXjTmhpoA==",
+      "path": "toltek/2.9.0",
+      "hashPath": "toltek.2.9.0.nupkg.sha512"
+    },
     "Toltek.AspNetCore/2.9.0": {
       "type": "package",
       "serviceable": true,
@@ -9028,6 +9035,48 @@
       "path": "toltek.automapper/2.9.0",
       "hashPath": "toltek.automapper.2.9.0.nupkg.sha512"
     },
+    "Toltek.Bbb/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j93zFMkFtnVyqxB4PuhEp2V8itD77/GLxYWtDakQNVheK1Yyh//AUZovnI3L6vrcd4q/Y9D41VK3qYxdSckOvw==",
+      "path": "toltek.bbb/0.0.3",
+      "hashPath": "toltek.bbb.0.0.3.nupkg.sha512"
+    },
+    "Toltek.Bbb.ApiClient/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5wCQG4dQl1hEIvHmN4o7VGbcB3VA+yZqoUZARjnlo99mLFmPrbSOCydD/9jk2rDSLvzOOyOOf0Vp4uD+oyb1iQ==",
+      "path": "toltek.bbb.apiclient/0.0.3",
+      "hashPath": "toltek.bbb.apiclient.0.0.3.nupkg.sha512"
+    },
+    "Toltek.Bbb.ApiModels/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a+R3x1r8dCwwgN5BDMrn4sFIWsjJBtRGmjndoEOL6141WtOD0xWTGqybdI0SUzMVzzcM4K/T3dei45hSZQYOgg==",
+      "path": "toltek.bbb.apimodels/0.0.3",
+      "hashPath": "toltek.bbb.apimodels.0.0.3.nupkg.sha512"
+    },
+    "Toltek.Bbb.HttpApi/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lLMF7+dMtw4F8B64CvGlfXnLE8QzEd6jIFx6T9/GSSDVPKK6JqP89jZSq7gIlywI90tpI9s8t046FHj7oYJoZw==",
+      "path": "toltek.bbb.httpapi/0.0.3",
+      "hashPath": "toltek.bbb.httpapi.0.0.3.nupkg.sha512"
+    },
+    "Toltek.Bbb.Models/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8hLl9YHQjAFNckqkt9VsDRiRy7dXRzyeGeYmwsrO3ayu7Cqnc+3nrbUNXsz6fQ4aR4M+0qwUaMkB8VYgtlP9ZQ==",
+      "path": "toltek.bbb.models/0.0.3",
+      "hashPath": "toltek.bbb.models.0.0.3.nupkg.sha512"
+    },
+    "Toltek.Bbb.Postgres/0.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wnBnPsc9DiuWHF2oLRRFWxfUTrdZSi0apDf9T0p8evN6BaD+WrQWSVDvH1M7b8g1We4J3aKnUr9+TY9Udm9VwQ==",
+      "path": "toltek.bbb.postgres/0.0.3",
+      "hashPath": "toltek.bbb.postgres.0.0.3.nupkg.sha512"
+    },
     "Toltek.Caching/2.9.0": {
       "type": "package",
       "serviceable": true,
@@ -9041,6 +9090,13 @@
       "sha512": "sha512-1QIGAVtNYw3o6ZhQX1RE+eyOV+hD6s0Mj7IcDD22LLDCE23ZEwOZRkHRekfiYCWAmBVrvLLKCeRi+smQGvTeTA==",
       "path": "toltek.charts/2.9.0",
       "hashPath": "toltek.charts.2.9.0.nupkg.sha512"
+    },
+    "Toltek.Core/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6uM6Vl/fAnt44Z4SVni1fn8PgEWsdsmrYuA2yikBd0kIJ3eISdtiXXhxmXZ18jtP/4EH5Bnb4u/we6IHAsiu9w==",
+      "path": "toltek.core/2.9.0",
+      "hashPath": "toltek.core.2.9.0.nupkg.sha512"
     },
     "Toltek.Data/2.9.0": {
       "type": "package",
@@ -9062,6 +9118,20 @@
       "sha512": "sha512-gp2J2Q50ViUsYSYeNMf6Ms+6bqNqxI/1IAC5NAY7flPw59nrZ837kQ7ztmdWsAqSi2Q4cgakO2bcZwPmPV+jZA==",
       "path": "toltek.domain/2.9.0",
       "hashPath": "toltek.domain.2.9.0.nupkg.sha512"
+    },
+    "Toltek.Ef/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RlDdeC1XEqgMjfVqhxIiiWfl0M4VxkpTFCswCcI89730KyDEoVNa5LqYxul5B7OfvQIy1ii5GJ3750g8PpUi+Q==",
+      "path": "toltek.ef/2.9.0",
+      "hashPath": "toltek.ef.2.9.0.nupkg.sha512"
+    },
+    "Toltek.Identity/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+z9KJpE3aqKgeyMlw4fvV7xQ4WMSjeemSEuzXuY6tuFwzpLk2HYr5s/G+CPWhWcAxAC9cEgwoAhOmEH8kETljQ==",
+      "path": "toltek.identity/2.9.0",
+      "hashPath": "toltek.identity.2.9.0.nupkg.sha512"
     },
     "Toltek.Localization/2.9.0": {
       "type": "package",
@@ -9097,6 +9167,13 @@
       "sha512": "sha512-qq3TKYNbC5/88KWFS36wYqPpQgj2TjBCzn2Vvbgg23JGQP7JqoDLTKLTWVyJHXWVyg/WWhBB+s5cF0bjhTJ9rg==",
       "path": "toltek.platform/2.9.0",
       "hashPath": "toltek.platform.2.9.0.nupkg.sha512"
+    },
+    "Toltek.Platform.AspNetCore/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EwyotJ8/UvmHQ7kqOT7hTEE/6CWI41NKjqjGZ7/cXwDUwto427XJI2BtS9M3WzQbw4QpK6YIZsph773WqwQNuQ==",
+      "path": "toltek.platform.aspnetcore/2.9.0",
+      "hashPath": "toltek.platform.aspnetcore.2.9.0.nupkg.sha512"
     },
     "Toltek.Security/2.9.0": {
       "type": "package",
@@ -9146,61 +9223,6 @@
       "sha512": "sha512-U9Ix4l4cl58Kzz1rJzj5hoVTjmbx1qGMwzAcbv1j/d3NzrFaESIurQyg+ow4mivCgkE3S413y+U9k4WdnEIkRA==",
       "path": "zstdsharp.port/0.7.3",
       "hashPath": "zstdsharp.port.0.7.3.nupkg.sha512"
-    },
-    "Toltek/2.9.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb.ApiClient/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb.ApiModels/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb.HttpApi/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb.Models/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Bbb.Postgres/0.0.3": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Core/2.9.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Ef/2.9.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Identity/2.9.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Platform.AspNetCore/2.9.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/9.0.0.0": {
       "type": "referenceassembly",
