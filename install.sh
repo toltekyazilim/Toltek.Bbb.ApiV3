@@ -65,7 +65,7 @@ SERVICE_FILE="/etc/systemd/system/$INSTANCE_NAME.bbb.apiv3.service"
 REPO_URL="https://github.com/toltekyazilim/Toltek.Bbb.ApiV3.git"
 SERVICE_NAME="$INSTANCE_NAME.bbb.apiv3.service"
 
-for dir in "/var/toltek" "/var/toltek/instances" "$BASE_DIR" "$APPS_DIR"; do
+for dir in "/var/toltek" "/var/toltek/instances" "$BASE_DIR" "$BASE_DIR/settings" "$APPS_DIR"; do
     if [ ! -d "$dir" ]; then
         sudo mkdir -p "$dir"
         echo "✅ Dizin oluşturuldu: $dir"
@@ -131,3 +131,7 @@ sudo systemctl enable "$SERVICE_NAME"
 echo "📊 Servis durumu:"
 systemctl status "$SERVICE_NAME" --no-pager
 echo "🎉 Kurulum tamamlandı!"
+
+journalctl -u $INSTANCE_NAME.bbb.apiv3.service -e
+sudo systemctl enable $INSTANCE_NAME.blue.api.service
+# journalctl -u subu.bbb.apiv3.service -e
