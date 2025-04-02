@@ -1,6 +1,6 @@
 ﻿# Toltek Bbb ApiV3 - Update Bash
 # Yavuz 02/04/2025
-# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/install.sh | bash -s -- -v jammy-300
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/demo/install.sh | bash -s -- -v jammy-300
 echo Bbb.ApiV3 install
 sudo su
 echo dotnet install

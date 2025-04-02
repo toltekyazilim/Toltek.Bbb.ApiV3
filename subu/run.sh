@@ -1,20 +1,19 @@
-﻿# Toltek Blue Api - Update Bash
-# Yavuz 31/01/2025
-
-FILE=/etc/bigbluebutton/nginx/toltek.blue.api.nginx
+﻿# Toltek Bbb ApiV3 - Run Bash
+# Yavuz 02/04/2025
+FILE=/usr/share/bigbluebutton/nginx/toltek.bbb.apiv3.nginx
 if [ -f "$FILE" ]; then
-    systemctl stop toltek.blue.api.service
+    systemctl stop toltek.bbb.apiv3.service
 
-    rm /etc/systemd/system/toltek.blue.api.service
-    ln -s /var/toltek/instances/subu/apps/subu/toltek.blue.api.service /etc/systemd/system/toltek.blue.api.service
+    rm /usr/share/bigbluebutton/nginx/toltek.bbb.apiv3.nginx
+    ln -s /var/toltek/instances/subu/apps/Toltek.Bbb.ApiV3/toltek.bbb.apiv3.nginx /usr/share/bigbluebutton/nginx/toltek.bbb.apiv3.nginx
 
-    rm /usr/share/bigbluebutton/nginx/toltek.blue.api.nginx
-    ln -s /var/toltek/instances/subu/apps/subu/toltek.blue.api.nginx /usr/share/bigbluebutton/nginx/toltek.blue.api.nginx
+    rm /etc/systemd/system/toltek.bbb.apiv3.service
+    ln -s /var/toltek/instances/subu/apps/toltek.bbb.apiv3.service /etc/systemd/system/toltek.bbb.apiv3.service
 
 else
     echo "$FILE does not exist."
 fi
 
 service nginx reload
-systemctl restart toltek.blue.api.service
-systemctl status toltek.blue.api.service
+systemctl start toltek.bbb.apiv3.service
+systemctl status toltek.bbb.apiv3.service
