@@ -1,5 +1,5 @@
 ﻿[Unit]
-Description=ToltekBbbApiV3
+Description=SubuBbbApiV3
 
 [Service]
 WorkingDirectory=/var/toltek/instances/subu/apps/Toltek.Bbb.ApiV3
@@ -8,7 +8,7 @@ Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=toltek-bbb-apiv3
+SyslogIdentifier=subu-bbb-apiv3
 User=root
 Environment=ASPNETCORE_ENVIRONMENT=Subu
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=true

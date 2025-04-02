@@ -97,7 +97,7 @@ if [ -f "$NGINX_CONFIG" ]; then
     echo "✅ Mevcut Nginx konfigürasyonu kaldırıldı."
 fi
 
-sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/$INSTANCE_NAME.bbb.apiv3.nginx" "$NGINX_CONFIG"
+sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/config/$INSTANCE_NAME.bbb.apiv3.nginx" "$NGINX_CONFIG"
 sudo service nginx reload
 echo "✅ Nginx konfigürasyonu güncellendi ve yeniden yüklendi."
 
