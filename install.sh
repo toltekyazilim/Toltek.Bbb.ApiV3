@@ -6,7 +6,8 @@
 # Bu script, Toltek.Bbb.ApiV3 servisini Ubuntu sunucusunda kurar ve günceller.
 #
 # Çalıştırma Komutu (Örnek):
-# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/subu/install.sh | bash -s --subu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/install.sh | bash -s -- subu
+
 #
 # Açıklama:
 # - .NET SDK ve Runtime kontrol edilir ve eksikse kurulur.
@@ -109,6 +110,12 @@ fi
 
 if [ -f "$SERVICE_FILE" ]; then
     sudo rm "$SERVICE_FILE"
+    rm /etc/systemd/system/toltek.bbb.apiv3.service
+    echo "✅ Eski servis dosyası kaldırıldı."
+fi
+
+if [ -f "/etc/systemd/system/toltek.bbb.apiv3.service" ]; then
+    rm /etc/systemd/system/toltek.bbb.apiv3.service 
     echo "✅ Eski servis dosyası kaldırıldı."
 fi
 
