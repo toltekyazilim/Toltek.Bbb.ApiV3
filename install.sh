@@ -134,5 +134,11 @@ echo "🎉 Kurulum tamamlandı!"
 
 journalctl -u $INSTANCE_NAME.bbb.apiv3.service -e
 sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
+
+# 📌 Notlar
+# Servis başlamazsa veya hata alırsanız, aşağıdaki komutları kullanarak servis durumunu kontrol edebilirsiniz:
 # journalctl -u subu.bbb.apiv3.service -e
-#  systemctl status subu.bbb.apiv3.service 
+# systemctl status subu.bbb.apiv3.service
+# 🛑 Servisi durdurma ve devre dışı bırakma
+# sudo systemctl stop subu.bbb.apiv3.service
+# sudo systemctl disable subu.bbb.apiv3.service
