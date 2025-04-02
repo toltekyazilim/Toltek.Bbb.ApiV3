@@ -1,0 +1,20 @@
+﻿[Unit]
+Description=ToltekBbbApiV3
+
+[Service]
+WorkingDirectory=/var/toltek/instances/demo/apps/Toltek.Bbb.ApiV3
+ExecStart=/usr/bin/dotnet /var/toltek/instances/demo/apps/Toltek.Bbb.ApiV3/Toltek.Bbb.ApiV3.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=toltek-bbb-apiv3
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Demo
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=true
+Environment=ConfigPath=/var/toltek/instances/demo/settings
+Environment=Instance=Demo
+
+
+[Install]
+WantedBy=multi-user.target
