@@ -118,7 +118,7 @@ if [ -e "$SERVICE_FILE" ]; then
     fi
 fi
 
-sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/toltek.bbb.apiv3.service" "$SERVICE_FILE"
+sudo ln -s "$BASE_DIR/$INSTANCE_NAME/toltek.bbb.apiv3.service" "$SERVICE_FILE"
 echo "✅ Yeni servis dosyası oluşturuldu."
 
 # Servisi başlatma ve etkinleştirme
