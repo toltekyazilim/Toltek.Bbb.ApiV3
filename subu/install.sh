@@ -1,12 +1,12 @@
 ﻿# Toltek Bbb ApiV3 - Update Bash
 # Yavuz 02/04/2025
 # wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/subu/install.sh | bash -s -- -v jammy-300
-echo Toltek.Bbb.ApiV3
+echo installing Toltek.Bbb.ApiV3
 
-echo Toltek install dotnet
+echo sudo
 sudo su
-
-sudo sudo add-apt-repository ppa:dotnet/backports
+echo installing dotnet
+sudo add-apt-repository ppa:dotnet/backports
 
 yes | sudo apt-get update
 yes | sudo apt-get install apt-transport-https
