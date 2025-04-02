@@ -108,15 +108,14 @@ if systemctl list-units --full -all | grep -Fq "$SERVICE_NAME"; then
     echo "✅ Mevcut servis durduruldu."
 fi
 
-if [ -f "$SERVICE_FILE" ]; then
-    sudo rm "$SERVICE_FILE"
-    rm /etc/systemd/system/toltek.bbb.apiv3.service
-    echo "✅ Eski servis dosyası kaldırıldı."
-fi
-
-if [ -f "/etc/systemd/system/toltek.bbb.apiv3.service" ]; then
-    rm /etc/systemd/system/toltek.bbb.apiv3.service 
-    echo "✅ Eski servis dosyası kaldırıldı."
+if [ -e "$SERVICE_FILE" ]; then
+    if [ -L "$SERVICE_FILE" ]; then
+        sudo unlink "$SERVICE_FILE"
+        echo "✅ Eski sembolik link kaldırıldı."
+    else
+        sudo rm -f "$SERVICE_FILE"
+        echo "✅ Eski servis dosyası kaldırıldı."
+    fi
 fi
 
 sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/toltek.bbb.apiv3.service" "$SERVICE_FILE"
