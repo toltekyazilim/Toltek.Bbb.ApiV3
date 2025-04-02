@@ -135,3 +135,4 @@ echo "🎉 Kurulum tamamlandı!"
 journalctl -u $INSTANCE_NAME.bbb.apiv3.service -e
 sudo systemctl enable $INSTANCE_NAME.blue.api.service
 # journalctl -u subu.bbb.apiv3.service -e
+#  systemctl status subu.bbb.apiv3.service 
