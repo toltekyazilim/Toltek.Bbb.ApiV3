@@ -60,10 +60,10 @@ dotnet --info
 # 📂 Dizin yapısını oluştur
 BASE_DIR="/var/toltek/instances/$INSTANCE_NAME"
 APPS_DIR="$BASE_DIR/apps"
-NGINX_CONFIG="/usr/share/bigbluebutton/nginx/toltek.bbb.apiv3.nginx"
-SERVICE_FILE="/etc/systemd/system/toltek.bbb.apiv3.service"
+NGINX_CONFIG="/usr/share/bigbluebutton/nginx/$INSTANCE_NAME.bbb.apiv3.nginx"
+SERVICE_FILE="/etc/systemd/system/$INSTANCE_NAME.bbb.apiv3.service"
 REPO_URL="https://github.com/toltekyazilim/Toltek.Bbb.ApiV3.git"
-SERVICE_NAME="toltek.bbb.apiv3.service"
+SERVICE_NAME="$INSTANCE_NAME.bbb.apiv3.service"
 
 for dir in "/var/toltek" "/var/toltek/instances" "$BASE_DIR" "$APPS_DIR"; do
     if [ ! -d "$dir" ]; then
@@ -97,7 +97,7 @@ if [ -f "$NGINX_CONFIG" ]; then
     echo "✅ Mevcut Nginx konfigürasyonu kaldırıldı."
 fi
 
-sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/toltek.bbb.apiv3.nginx" "$NGINX_CONFIG"
+sudo ln -s "$APPS_DIR/Toltek.Bbb.ApiV3/$INSTANCE_NAME.bbb.apiv3.nginx" "$NGINX_CONFIG"
 sudo service nginx reload
 echo "✅ Nginx konfigürasyonu güncellendi ve yeniden yüklendi."
 
