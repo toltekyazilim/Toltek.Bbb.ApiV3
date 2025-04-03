@@ -6,7 +6,7 @@
 # Bu script, Toltek.Bbb.ApiV3 servisini günceller.
 #
 # Çalıştırma Komutu (Örnek):
-# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/run.sh | bash -s --subu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/run.sh | bash -s -- subu
 #
 # Açıklama:
 # - BigBlueButton için Nginx yapılandırması ayarlanır. 
@@ -20,10 +20,10 @@ INSTANCE_NAME=${1:-"default-instance"}
 
 echo "📌 Kurulum başlatılıyor... (Instance: $INSTANCE_NAME)"
  
-export ASPNETCORE_ENVIRONMENT=$INSTANCE_NAME)
+export ASPNETCORE_ENVIRONMENT=$INSTANCE_NAME
 export DOTNET_PRINT_TELEMETRY_MESSAGE=true
-export ConfigPath=/var/toltek/$INSTANCE_NAME)/settings
-export Instance=$INSTANCE_NAME)
+export ConfigPath=/var/toltek/$INSTANCE_NAME/settings
+export Instance=$INSTANCE_NAME
 
-cd /var/toltek/$INSTANCE_NAME)/apps/Toltek.Bbb.ApiV3/app
+cd /var/toltek/$INSTANCE_NAME/apps/Toltek.Bbb.ApiV3/app
 dotnet Toltek.Bbb.ApiV3.dll
