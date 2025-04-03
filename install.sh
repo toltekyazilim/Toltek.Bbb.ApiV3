@@ -60,8 +60,8 @@ dotnet --info
 # 📂 Dizin yapısını oluştur
 BASE_DIR="/var/toltek"
 INSTANCE_DIR="$BASE_DIR/$INSTANCE_NAME"
-APPS_DIR="$BASE_DIR/apps"
-SETTINGS_DIR="$BASE_DIR/settings"
+APPS_DIR="$INSTANCE_DIR/apps"
+SETTINGS_DIR="$INSTANCE_DIR/settings"
 NGINX_CONFIG="/usr/share/bigbluebutton/nginx/$INSTANCE_NAME.bbb.apiv3.nginx"
 SERVICE_FILE="/etc/systemd/system/$INSTANCE_NAME.bbb.apiv3.service"
 REPO_URL="https://github.com/toltekyazilim/Toltek.Bbb.ApiV3.git"
@@ -144,3 +144,4 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 # 🛑 Servisi durdurma ve devre dışı bırakma
 # sudo systemctl stop subu.bbb.apiv3.service
 # sudo systemctl disable subu.bbb.apiv3.service
+
