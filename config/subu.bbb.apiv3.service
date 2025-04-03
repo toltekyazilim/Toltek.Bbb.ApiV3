@@ -10,10 +10,10 @@ RestartSec=60
 KillSignal=SIGINT
 SyslogIdentifier=subu-bbb-apiv3
 User=root
-Environment=ASPNETCORE_ENVIRONMENT=Subu
+Environment=ASPNETCORE_ENVIRONMENT=subu 
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=true
 Environment=ConfigPath=/var/toltek/subu/settings
-Environment=Instance=Subu
+Environment=Instance=subu
 
 
 [Install]
