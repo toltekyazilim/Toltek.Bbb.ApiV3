@@ -58,14 +58,16 @@ fi
 dotnet --info
 
 # 📂 Dizin yapısını oluştur
-BASE_DIR="/var/toltek/instances/$INSTANCE_NAME"
+BASE_DIR="/var/toltek"
+INSTANCE_DIR="$BASE_DIR/$INSTANCE_NAME"
 APPS_DIR="$BASE_DIR/apps"
+SETTINGS_DIR="$BASE_DIR/settings"
 NGINX_CONFIG="/usr/share/bigbluebutton/nginx/$INSTANCE_NAME.bbb.apiv3.nginx"
 SERVICE_FILE="/etc/systemd/system/$INSTANCE_NAME.bbb.apiv3.service"
 REPO_URL="https://github.com/toltekyazilim/Toltek.Bbb.ApiV3.git"
 SERVICE_NAME="$INSTANCE_NAME.bbb.apiv3.service"
 
-for dir in "/var/toltek" "/var/toltek/instances" "$BASE_DIR" "$BASE_DIR/settings" "$APPS_DIR"; do
+for dir in "$BASE_DIR" "$INSTANCE_DIR" "$APPS_DIR" "$SETTINGS_DIR"; do
     if [ ! -d "$dir" ]; then
         sudo mkdir -p "$dir"
         echo "✅ Dizin oluşturuldu: $dir"

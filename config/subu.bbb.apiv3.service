@@ -2,18 +2,18 @@
 Description=SubuBbbApiV3
 
 [Service]
-WorkingDirectory=/var/toltek/instances/subu/apps/Toltek.Bbb.ApiV3
-ExecStart=/usr/bin/dotnet /var/toltek/instances/subu/apps/Toltek.Bbb.ApiV3/app/Toltek.Bbb.ApiV3.dll
+WorkingDirectory=/var/toltek/subu/apps/Toltek.Bbb.ApiV3/app
+ExecStart=/usr/bin/dotnet /var/toltek/subu/apps/Toltek.Bbb.ApiV3/app/Toltek.Bbb.ApiV3.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
-RestartSec=10
+RestartSec=60
 KillSignal=SIGINT
 SyslogIdentifier=subu-bbb-apiv3
 User=root
 Environment=ASPNETCORE_ENVIRONMENT=Subu
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=true
-Environment=ConfigPath=/var/toltek/instances/subu/settings
-Environment=Instance=subu
+Environment=ConfigPath=/var/toltek/subu/settings
+Environment=Instance=Subu
 
 
 [Install]
