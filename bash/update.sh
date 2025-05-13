@@ -6,7 +6,7 @@
 # Bu script, Toltek.Bbb.ApiV3 servisini günceller.
 #
 # Çalıştırma Komutu (Örnek):
-# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/update.sh | bash -s --subu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/update.sh | bash -s -- subu
 #
 # Açıklama:
 # - BigBlueButton için Nginx yapılandırması ayarlanır.

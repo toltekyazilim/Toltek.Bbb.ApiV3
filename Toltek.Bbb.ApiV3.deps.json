@@ -5016,8 +5016,8 @@
         "dependencies": {
           "Toltek.AspNetCore.DataTables": "2.9.0",
           "Toltek.AspNetCore.Tasking": "2.9.0",
-          "Toltek.Bbb": "0.0.3",
           "Toltek.Bbb.ApiClient": "0.0.3",
+          "Toltek.Bbb.Domain": "0.0.3",
           "Toltek.Platform.AspNetCore": "2.9.0"
         },
         "runtime": {
