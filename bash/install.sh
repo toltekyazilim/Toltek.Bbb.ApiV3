@@ -7,6 +7,7 @@
 #
 # Çalıştırma Komutu (Örnek):
 # wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- subu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- ebyu
 
 #
 # Açıklama:
@@ -62,12 +63,13 @@ BASE_DIR="/var/toltek"
 INSTANCE_DIR="$BASE_DIR/$INSTANCE_NAME"
 APPS_DIR="$INSTANCE_DIR/apps"
 SETTINGS_DIR="$INSTANCE_DIR/settings"
+LOGS_DIR="$INSTANCE_DIR/logs"
 NGINX_CONFIG="/usr/share/bigbluebutton/nginx/$INSTANCE_NAME.bbb.apiv3.nginx"
 SERVICE_FILE="/etc/systemd/system/$INSTANCE_NAME.bbb.apiv3.service"
 REPO_URL="https://github.com/toltekyazilim/Toltek.Bbb.ApiV3.git"
 SERVICE_NAME="$INSTANCE_NAME.bbb.apiv3.service"
 
-for dir in "$BASE_DIR" "$INSTANCE_DIR" "$APPS_DIR" "$SETTINGS_DIR"; do
+for dir in "$BASE_DIR" "$INSTANCE_DIR" "$APPS_DIR" "$SETTINGS_DIR" "$LOGS_DIR"; do
     if [ ! -d "$dir" ]; then
         sudo mkdir -p "$dir"
         echo "✅ Dizin oluşturuldu: $dir"
@@ -75,7 +77,7 @@ for dir in "$BASE_DIR" "$INSTANCE_DIR" "$APPS_DIR" "$SETTINGS_DIR"; do
         echo "🔹 Dizin zaten mevcut: $dir"
     fi
 done
-
+chmod 777 "$SETTINGS_DIR" "$LOGS_DIR"
 # Repository çekme veya güncelleme
 echo "🔄 Repository güncelleniyor..."
 if [ ! -d "$APPS_DIR/Toltek.Bbb.ApiV3/.git" ]; then
@@ -145,3 +147,4 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 # sudo systemctl stop subu.bbb.apiv3.service
 # sudo systemctl disable subu.bbb.apiv3.service
 
+# sudo systemctl stop ebyu.bbb.apiv3.service
