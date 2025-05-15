@@ -148,3 +148,4 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 # sudo systemctl disable subu.bbb.apiv3.service
 
 # sudo systemctl stop ebyu.bbb.apiv3.service
+# sudo -i -u postgres -- psql -U postgres -d bbb_graphql -q -f "/tmp/bbb_schema.sql" --set ON_ERROR_STOP=on
