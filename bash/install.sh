@@ -6,8 +6,11 @@
 # Bu script, Toltek.Bbb.ApiV3 servisini Ubuntu sunucusunda kurar ve günceller.
 #
 # Çalıştırma Komutu (Örnek):
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- demo
 # wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- subu
 # wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- ebyu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- kostu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- ksbu
 
 #
 # Açıklama:
@@ -29,7 +32,7 @@ UBUNTU_VERSION=$(lsb_release -rs)
 
 # .NET için en uygun sürümü belirle
 if [[ "$UBUNTU_VERSION" == "24.04" ]] || [[ "$UBUNTU_VERSION" == "22.04" ]]; then
-    DOTNET_VERSION="9.0"
+    DOTNET_VERSION="10.0"
 else
     echo "🚨 Desteklenmeyen Ubuntu sürümü: $UBUNTU_VERSION"
     exit 1
@@ -122,6 +125,14 @@ if [ -e "$SERVICE_FILE" ]; then
     fi
 fi
 
+# DOSYALAR ÖNCE YÜKLENMEDİĞİ İÇİN ÇALIŞTIRAMIYORUZ. 2 Script yapıp pre ve post diye uygulayabiliriz
+#echo "Veritabanına kullanıcı ekleniyor uygulanıyor..."
+#bash /var/toltek/$INSTANCE_NAME/settings/$INSTANCE_NAME-postgres.sh
+#echo "Veritabanına migrations uygulanıyor..."
+#sudo -u postgres psql -U postgres -d bbb_graphql -f /var/toltek/$INSTANCE_NAME/settings/BbbContext.sql
+# sudo -u postgres psql -U postgres -d bbb_graphql -f /var/toltek/$INSTANCE_NAME/settings/migration2.sql
+
+
 sudo ln -s "$SETTINGS_DIR/systemd/$INSTANCE_NAME.bbb.apiv3.service" "$SERVICE_FILE"
 echo "✅ Yeni servis dosyası oluşturuldu."
 
@@ -147,5 +158,9 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 # sudo systemctl stop subu.bbb.apiv3.service
 # sudo systemctl disable subu.bbb.apiv3.service
 
-# sudo systemctl stop ebyu.bbb.apiv3.service
+# sudo systemctl stop subu.bbb.apiv3.service
 # sudo -i -u postgres -- psql -U postgres -d bbb_graphql -q -f "/tmp/bbb_schema.sql" --set ON_ERROR_STOP=on
+
+# chmod +x /var/toltek/subu/settings/subu-postgres.sh
+# bash /var/toltek/subu/settings/subu-postgres.sh
+
