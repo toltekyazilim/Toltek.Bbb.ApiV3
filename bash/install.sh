@@ -47,21 +47,15 @@ REQUIRED_VERSION="10.0"
 echo "🟢 Yüklü .NET sürümü: $INSTALLED_DOTNET_VERSION (Gerekli: $REQUIRED_VERSION.x)"
 
 if [[ "$INSTALLED_DOTNET_VERSION" != $REQUIRED_VERSION* ]]; then
-    echo "🔴 .NET sürümü uygun değil veya eksik. Yükleniyor..."
-
-    sudo apt update
-    sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
-
-    echo "🔑 Microsoft paket deposu ekleniyor..."
-    wget -q https://packages.microsoft.com/config/ubuntu/$UBUNTU_VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-    sudo dpkg -i packages-microsoft-prod.deb
-    rm packages-microsoft-prod.deb
-
+    echo "🔴 .NET sürümü uygun değil veya eksik. Yükleniyor..." 
+    echo "🔑 dotnet backports ekleniyor..."
+    sudo add-apt-repository ppa:dotnet/backports 
     echo "📦 .NET $REQUIRED_VERSION kuruluyor..."
     sudo apt update
-    sudo apt install -y dotnet-sdk-$REQUIRED_VERSION aspnetcore-runtime-$REQUIRED_VERSION
+    sudo apt-get install -y dotnet-sdk-10.0
+    sudo apt-get install -y aspnetcore-runtime-10.0
 
-    echo "✅ .NET $REQUIRED_VERSION başarıyla kuruldu."
+    echo "✅ .NET 10 başarıyla kuruldu."
 else
     echo "🟢 Uygun .NET sürümü zaten mevcut: $INSTALLED_DOTNET_VERSION"
 fi
