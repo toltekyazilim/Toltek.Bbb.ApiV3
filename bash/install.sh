@@ -40,9 +40,15 @@ fi
 
 echo "🟢 Ubuntu $UBUNTU_VERSION tespit edildi. .NET $DOTNET_VERSION kontrol ediliyor..."
 
-# .NET yüklü mü kontrol et
-if ! command -v dotnet &> /dev/null; then
-    echo "🔴 .NET yüklü değil, kurulum başlatılıyor..."
+# .NET sürüm kontrolü
+INSTALLED_DOTNET_VERSION=$(dotnet --version 2>/dev/null || echo "")
+REQUIRED_VERSION="10.0"
+
+echo "🟢 Yüklü .NET sürümü: $INSTALLED_DOTNET_VERSION (Gerekli: $REQUIRED_VERSION.x)"
+
+if [[ "$INSTALLED_DOTNET_VERSION" != $REQUIRED_VERSION* ]]; then
+    echo "🔴 .NET sürümü uygun değil veya eksik. Yükleniyor..."
+
     sudo apt update
     sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
 
@@ -51,12 +57,13 @@ if ! command -v dotnet &> /dev/null; then
     sudo dpkg -i packages-microsoft-prod.deb
     rm packages-microsoft-prod.deb
 
-    echo "📦 .NET $DOTNET_VERSION yükleniyor..."
+    echo "📦 .NET $REQUIRED_VERSION kuruluyor..."
     sudo apt update
-    sudo apt install -y dotnet-sdk-$DOTNET_VERSION aspnetcore-runtime-$DOTNET_VERSION
-    echo "✅ .NET $DOTNET_VERSION başarıyla yüklendi."
+    sudo apt install -y dotnet-sdk-$REQUIRED_VERSION aspnetcore-runtime-$REQUIRED_VERSION
+
+    echo "✅ .NET $REQUIRED_VERSION başarıyla kuruldu."
 else
-    echo "✅ .NET zaten yüklü: $(dotnet --version)"
+    echo "🟢 Uygun .NET sürümü zaten mevcut: $INSTALLED_DOTNET_VERSION"
 fi
 
 dotnet --info
