@@ -40,25 +40,24 @@ fi
 
 echo "🟢 Ubuntu $UBUNTU_VERSION tespit edildi. .NET $DOTNET_VERSION kontrol ediliyor..."
 
-# .NET sürüm kontrolü
-INSTALLED_DOTNET_VERSION=$(dotnet --version 2>/dev/null || echo "")
-REQUIRED_VERSION="10.0"
+# .NET yüklü mü kontrol et
+#if ! command -v dotnet &> /dev/null; then
+ #   echo "🔴 .NET yüklü değil, kurulum başlatılıyor..."
+#    sudo apt update
+#    sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
 
-echo "🟢 Yüklü .NET sürümü: $INSTALLED_DOTNET_VERSION (Gerekli: $REQUIRED_VERSION.x)"
+#    echo "🔑 Microsoft paket deposu ekleniyor..."
+#    wget -q https://packages.microsoft.com/config/ubuntu/$UBUNTU_VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+#    sudo dpkg -i packages-microsoft-prod.deb
+ #   rm packages-microsoft-prod.deb
 
-if [[ "$INSTALLED_DOTNET_VERSION" != $REQUIRED_VERSION* ]]; then
-    echo "🔴 .NET sürümü uygun değil veya eksik. Yükleniyor..." 
-    echo "🔑 dotnet backports ekleniyor..."
-    sudo add-apt-repository ppa:dotnet/backports 
-    echo "📦 .NET $REQUIRED_VERSION kuruluyor..."
-    sudo apt update
-    sudo apt-get install -y dotnet-sdk-10.0
-    sudo apt-get install -y aspnetcore-runtime-10.0
-
-    echo "✅ .NET 10 başarıyla kuruldu."
-else
-    echo "🟢 Uygun .NET sürümü zaten mevcut: $INSTALLED_DOTNET_VERSION"
-fi
+#    echo "📦 .NET $DOTNET_VERSION yükleniyor..."
+#    sudo apt update
+#    sudo apt install -y dotnet-sdk-$DOTNET_VERSION aspnetcore-runtime-$DOTNET_VERSION
+#    echo "✅ .NET $DOTNET_VERSION başarıyla yüklendi."
+#else
+#    echo "✅ .NET zaten yüklü: $(dotnet --version)"
+#fi
 
 dotnet --info
 
@@ -153,11 +152,12 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 
 # 📌 Notlar
 # Servis başlamazsa veya hata alırsanız, aşağıdaki komutları kullanarak servis durumunu kontrol edebilirsiniz:
-# journalctl -u subu.bbb.apiv3.service -e
-# systemctl status subu.bbb.apiv3.service
+# journalctl -u ebyu.bbb.apiv3.service -e
+# systemctl status ebyu.bbb.apiv3.service
 # 🛑 Servisi durdurma ve devre dışı bırakma
-# sudo systemctl stop subu.bbb.apiv3.service
-# sudo systemctl disable subu.bbb.apiv3.service
+# sudo systemctl stop ebyu.bbb.apiv3.service
+# sudo systemctl disable ebyu.bbb.apiv3.service
+# sudo systemctl status ebyu.bbb.apiv3.service
 
 # sudo systemctl stop subu.bbb.apiv3.service
 # sudo -i -u postgres -- psql -U postgres -d bbb_graphql -q -f "/tmp/bbb_schema.sql" --set ON_ERROR_STOP=on
