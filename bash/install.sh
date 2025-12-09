@@ -155,6 +155,7 @@ sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
 # journalctl -u ebyu.bbb.apiv3.service -e
 # systemctl status ebyu.bbb.apiv3.service
 # 🛑 Servisi durdurma ve devre dışı bırakma
+# sudo systemctl restart ebyu.bbb.apiv3.service
 # sudo systemctl stop ebyu.bbb.apiv3.service
 # sudo systemctl disable ebyu.bbb.apiv3.service
 # sudo systemctl status ebyu.bbb.apiv3.service
