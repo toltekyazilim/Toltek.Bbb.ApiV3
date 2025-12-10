@@ -32,7 +32,7 @@ UBUNTU_VERSION=$(lsb_release -rs)
 
 # .NET için en uygun sürümü belirle
 if [[ "$UBUNTU_VERSION" == "24.04" ]] || [[ "$UBUNTU_VERSION" == "22.04" ]]; then
-   
+    echo "OS : $UBUNTU_VERSION"
 else
     echo "🚨 Desteklenmeyen Ubuntu sürümü: $UBUNTU_VERSION"
     exit 1
