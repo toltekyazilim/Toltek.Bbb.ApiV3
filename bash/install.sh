@@ -32,32 +32,44 @@ UBUNTU_VERSION=$(lsb_release -rs)
 
 # .NET için en uygun sürümü belirle
 if [[ "$UBUNTU_VERSION" == "24.04" ]] || [[ "$UBUNTU_VERSION" == "22.04" ]]; then
-    DOTNET_VERSION="10.0"
+   
 else
     echo "🚨 Desteklenmeyen Ubuntu sürümü: $UBUNTU_VERSION"
     exit 1
 fi
 
-echo "🟢 Ubuntu $UBUNTU_VERSION tespit edildi. .NET $DOTNET_VERSION kontrol ediliyor..."
+echo "🟢 Ubuntu $UBUNTU_VERSION tespit edildi. .NET 10 kontrol ediliyor..."
 
-# .NET yüklü mü kontrol et
-#if ! command -v dotnet &> /dev/null; then
- #   echo "🔴 .NET yüklü değil, kurulum başlatılıyor..."
-#    sudo apt update
-#    sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
+HAS_DOTNET=false
+HAS_DOTNET10=false
 
-#    echo "🔑 Microsoft paket deposu ekleniyor..."
-#    wget -q https://packages.microsoft.com/config/ubuntu/$UBUNTU_VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-#    sudo dpkg -i packages-microsoft-prod.deb
- #   rm packages-microsoft-prod.deb
 
-#    echo "📦 .NET $DOTNET_VERSION yükleniyor..."
-#    sudo apt update
-#    sudo apt install -y dotnet-sdk-$DOTNET_VERSION aspnetcore-runtime-$DOTNET_VERSION
-#    echo "✅ .NET $DOTNET_VERSION başarıyla yüklendi."
-#else
-#    echo "✅ .NET zaten yüklü: $(dotnet --version)"
-#fi
+if command -v dotnet &> /dev/null; then
+HAS_DOTNET=true
+if dotnet --list-sdks 2>/dev/null | grep -q "^10\."; then
+HAS_DOTNET10=true
+fi
+fi
+
+
+if [ "$HAS_DOTNET10" = false ]; then
+echo "🔴 .NET 10 yüklü değil, kurulum başlatılıyor..."
+echo "🔴 Olası dotnet dizinleri temizleniyor."
+sudo rm -rf /root/.dotnet
+sudo rm -rf /usr/lib/dotnet 
+sudo rm -rf /usr/share/dotnet
+
+echo "🔴 https://dot.net/v1/dotnet-install.sh çalıştırılıyor"
+curl -sSL https://dot.net/v1/dotnet-install.sh | sudo bash /dev/stdin --channel 10.0 --install-dir /usr/lib/dotnet
+
+echo "🔴 DOTNET_ROOT -->  /usr/lib/dotnet export edildi"
+export DOTNET_ROOT=/usr/lib/dotnet
+
+echo "✅ .NET 10 başarıyla yüklendi."
+else
+echo "✅ .NET 10 zaten yüklü."
+fi
+
 
 dotnet --info
 
