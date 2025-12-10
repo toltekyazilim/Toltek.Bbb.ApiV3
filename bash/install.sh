@@ -84,7 +84,7 @@ for dir in "$BASE_DIR" "$INSTANCE_DIR" "$APPS_DIR" "$SETTINGS_DIR" "$LOGS_DIR"; 
         echo "🔹 Dizin zaten mevcut: $dir"
     fi
 done
-chmod 777 "$SETTINGS_DIR" "$LOGS_DIR"
+sudo chmod 777 "$SETTINGS_DIR" "$LOGS_DIR"
 
 echo "🔄 Repository güncelleniyor..."
 if [ ! -d "$APPS_DIR/Toltek.Bbb.ApiV3/.git" ]; then
