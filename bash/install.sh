@@ -51,17 +51,14 @@ fi
 
 if [ "$HAS_DOTNET10" = false ]; then
     echo "🔴 .NET 10 yüklü değil, kurulum başlatılıyor..."
-
-    sudo apt update
-    sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
-
-    wget -q https://packages.microsoft.com/config/ubuntu/$UBUNTU_VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-    sudo dpkg -i packages-microsoft-prod.deb
-    rm packages-microsoft-prod.deb
-
-    sudo apt update
-    sudo apt install -y dotnet-sdk-$DOTNET_VERSION aspnetcore-runtime-$DOTNET_VERSION
-
+    sudo rm -rf /usr/share/dotnet
+    sudo rm -rf /usr/lib/dotnet
+    sudo rm -rf /root/.dotnet
+    sudo mkdir -p /usr/share/dotnet
+    curl -sSL https://dot.net/v1/dotnet-install.sh | sudo bash /dev/stdin --channel 10.0 --install-dir /usr/share/dotnet
+    echo 'export DOTNET_ROOT=/usr/share/dotnet' >> ~/.bashrc
+    sudo ln -sf /usr/share/dotnet/dotnet /usr/bin/dotnet
+    dotnet --version  
     echo "✅ .NET $DOTNET_VERSION başarıyla yüklendi."
 else
     echo "✅ .NET 10 zaten yüklü."
