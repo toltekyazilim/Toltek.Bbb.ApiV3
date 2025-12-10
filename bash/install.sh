@@ -1,6 +1,28 @@
-﻿#!/bin/bash
+﻿﻿#!/bin/bash
 
-set -e
+# ==============================================================================
+# Toltek Bbb ApiV3 - Update Bash Script
+# Yavuz - 02/04/2025
+# Bu script, Toltek.Bbb.ApiV3 servisini Ubuntu sunucusunda kurar ve günceller.
+#
+# Çalıştırma Komutu (Örnek):
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- demo
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- subu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- ebyu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- kostu
+# wget -qO- https://raw.githubusercontent.com/toltekyazilim/Toltek.Bbb.ApiV3/refs/heads/main/bash/install.sh | bash -s -- ksbu
+
+#
+# Açıklama:
+# - .NET SDK ve Runtime kontrol edilir ve eksikse kurulur.
+# - BigBlueButton için Nginx yapılandırması ayarlanır.
+# - Toltek.Bbb.ApiV3 kod deposu çekilir/güncellenir.
+# - Servis dosyaları kontrol edilir ve sistemde etkinleştirilir.
+# ==============================================================================
+
+set -e  # Hata oluşursa script'i durdur
+
+# 📌 Kurulum Adını Parametre Olarak Al
 
 INSTANCE_NAME=${1:-"default-instance"}
 
