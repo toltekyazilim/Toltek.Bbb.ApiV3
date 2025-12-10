@@ -143,4 +143,3 @@ systemctl status "$SERVICE_NAME" --no-pager
 echo "🎉 Kurulum tamamlandı!"
 
 journalctl -u $INSTANCE_NAME.bbb.apiv3.service -e
-sudo systemctl enable $INSTANCE_NAME.bbb.apiv3.service
