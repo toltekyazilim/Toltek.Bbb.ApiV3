@@ -64,7 +64,7 @@ else
     echo "✅ .NET 10 zaten yüklü."
 fi
 
-dotnet --info
+
 
 BASE_DIR="/var/toltek"
 INSTANCE_DIR="$BASE_DIR/$INSTANCE_NAME"
