@@ -2178,11 +2178,11 @@
           "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
-      "Scalar.AspNetCore/2.11.6": {
+      "Scalar.AspNetCore/2.11.9": {
         "runtime": {
           "lib/net10.0/Scalar.AspNetCore.dll": {
-            "assemblyVersion": "2.11.6.0",
-            "fileVersion": "2.11.6.0"
+            "assemblyVersion": "2.11.9.0",
+            "fileVersion": "2.11.9.0"
           }
         },
         "compile": {
@@ -2442,47 +2442,47 @@
           "lib/net6.0/StackExchange.Redis.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore/10.0.1": {
+      "Swashbuckle.AspNetCore/10.1.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "10.0.1",
-          "Swashbuckle.AspNetCore.Swagger": "10.0.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "10.0.1",
-          "Swashbuckle.AspNetCore.SwaggerUI": "10.0.1"
+          "Swashbuckle.AspNetCore.Swagger": "10.1.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.1.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "10.1.0"
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/10.0.1": {
+      "Swashbuckle.AspNetCore.Swagger/10.1.0": {
         "dependencies": {
           "Microsoft.OpenApi": "2.3.0"
         },
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "assemblyVersion": "10.0.1.0",
-            "fileVersion": "10.0.1.1964"
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.0.2093"
           }
         },
         "compile": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/10.0.1": {
+      "Swashbuckle.AspNetCore.SwaggerGen/10.1.0": {
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "10.0.1"
+          "Swashbuckle.AspNetCore.Swagger": "10.1.0"
         },
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "assemblyVersion": "10.0.1.0",
-            "fileVersion": "10.0.1.1964"
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.0.2093"
           }
         },
         "compile": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/10.0.1": {
+      "Swashbuckle.AspNetCore.SwaggerUI/10.1.0": {
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "assemblyVersion": "10.0.1.0",
-            "fileVersion": "10.0.1.1964"
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.0.2093"
           }
         },
         "compile": {
@@ -2585,30 +2585,6 @@
         },
         "compile": {
           "lib/net10.0/Toltek.Alerts.Abstractions.dll": {}
-        }
-      },
-      "Toltek.AspNetCore/3.0.0": {
-        "dependencies": {
-          "DeviceDetector.NET": "6.4.7",
-          "Duende.IdentityModel": "8.0.0",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
-          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "10.0.1",
-          "Toltek.Auditing.Abstractions": "3.0.0",
-          "Toltek.Http.Abstractions": "3.0.0",
-          "Toltek.Proxy.Abstractions": "3.0.0",
-          "Toltek.Security": "3.0.0",
-          "Toltek.Timing": "3.0.0",
-          "Toltek.Tracing.Abstractions": "3.0.0",
-          "Toltek.VirtualFileSystem": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.AspNetCore.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.AspNetCore.dll": {}
         }
       },
       "Toltek.AspNetCore.Alerts/3.0.0": {
@@ -2725,29 +2701,10 @@
           "lib/net10.0/Toltek.AspNetCore.MultiTenancy.dll": {}
         }
       },
-      "Toltek.AspNetCore.Mvc/3.0.0": {
-        "dependencies": {
-          "Toltek.AspNetCore": "3.0.0",
-          "Toltek.AspNetCore.Alerts": "3.0.0",
-          "Toltek.AspNetCore.Localization": "3.0.0",
-          "Toltek.Domain": "3.0.0",
-          "Toltek.ObjectMapping": "3.0.0",
-          "Toltek.Validation.Abstractions": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.AspNetCore.Mvc.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.AspNetCore.Mvc.dll": {}
-        }
-      },
       "Toltek.AspNetCore.OpenApi/3.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
-          "Scalar.AspNetCore": "2.11.6",
+          "Scalar.AspNetCore": "2.11.9",
           "Toltek.AspNetCore": "3.0.0"
         },
         "runtime": {
@@ -2811,7 +2768,7 @@
       "Toltek.AspNetCore.Swashbuckle/3.0.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "10.0.1",
-          "Swashbuckle.AspNetCore": "10.0.1",
+          "Swashbuckle.AspNetCore": "10.1.0",
           "Toltek.AspNetCore.Mvc": "3.0.0"
         },
         "runtime": {
@@ -2947,21 +2904,6 @@
         },
         "compile": {
           "lib/net10.0/Toltek.Batching.Abstractions.dll": {}
-        }
-      },
-      "Toltek.Caching/3.0.0": {
-        "dependencies": {
-          "Toltek": "3.0.0",
-          "Toltek.Caching.Abstractions": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Caching.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Caching.dll": {}
         }
       },
       "Toltek.Caching.Abstractions/3.0.0": {
@@ -3211,38 +3153,6 @@
           "lib/net10.0/Toltek.Http.Abstractions.dll": {}
         }
       },
-      "Toltek.Identity.Abstractions/3.0.0": {
-        "dependencies": {
-          "Duende.IdentityModel": "8.0.0",
-          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.1",
-          "Toltek.Auditing.Abstractions": "3.0.0",
-          "Toltek.Identity.Core": "3.0.0",
-          "Toltek.Security.Abstractions": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Identity.Abstractions.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Identity.Abstractions.dll": {}
-        }
-      },
-      "Toltek.Identity.Core/3.0.0": {
-        "dependencies": {
-          "Toltek.Core": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Identity.Core.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Identity.Core.dll": {}
-        }
-      },
       "Toltek.Importing.Abstractions/3.0.0": {
         "dependencies": {
           "Toltek.Data.Abstractions": "3.0.0",
@@ -3428,65 +3338,6 @@
         },
         "compile": {
           "lib/net10.0/Toltek.OpenTelemetry.dll": {}
-        }
-      },
-      "Toltek.Platform.AspNetCore/3.0.0": {
-        "dependencies": {
-          "Duende.IdentityModel": "8.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.1",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.1",
-          "Microsoft.AspNetCore.OpenApi": "10.0.1",
-          "Microsoft.Extensions.Caching.Hybrid": "10.1.0",
-          "Microsoft.Extensions.Http.Resilience": "10.1.0",
-          "Microsoft.Extensions.ServiceDiscovery": "10.1.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
-          "Toltek.AspNetCore.Auditing": "3.0.0",
-          "Toltek.AspNetCore.ExceptionHandling": "3.0.0",
-          "Toltek.AspNetCore.Files": "3.0.0",
-          "Toltek.AspNetCore.Localization": "3.0.0",
-          "Toltek.AspNetCore.MultiTenancy": "3.0.0",
-          "Toltek.AspNetCore.Mvc": "3.0.0",
-          "Toltek.AspNetCore.OpenTelemetry": "3.0.0",
-          "Toltek.AspNetCore.Security": "3.0.0",
-          "Toltek.AspNetCore.SignalR": "3.0.0",
-          "Toltek.AspNetCore.Swashbuckle": "3.0.0",
-          "Toltek.AspNetCore.Tracing": "3.0.0",
-          "Toltek.AspNetCore.Uow": "3.0.0",
-          "Toltek.Auth.Abstractions": "3.0.0",
-          "Toltek.Caching": "3.0.0",
-          "Toltek.Identity.Abstractions": "3.0.0",
-          "Toltek.Seeding.Abstractions": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Platform.AspNetCore.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Platform.AspNetCore.dll": {}
-        }
-      },
-      "Toltek.Platform.HttpApi/3.0.0": {
-        "dependencies": {
-          "Scalar.AspNetCore": "2.11.6",
-          "Toltek.AspNetCore.DataTables": "3.0.0",
-          "Toltek.AspNetCore.OpenApi": "3.0.0",
-          "Toltek.AspNetCore.Tasking": "3.0.0",
-          "Toltek.Json": "3.0.0",
-          "Toltek.Platform.AspNetCore": "3.0.0",
-          "Toltek.Seeding": "3.0.0",
-          "Toltek.Settings": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Platform.HttpApi.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Platform.HttpApi.dll": {}
         }
       },
       "Toltek.Proxy.Abstractions/3.0.0": {
@@ -3812,6 +3663,49 @@
           "Toltek.dll": {}
         }
       },
+      "Toltek.AspNetCore/3.0.0": {
+        "dependencies": {
+          "DeviceDetector.NET": "6.4.7",
+          "Duende.IdentityModel": "8.0.0",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "10.0.1",
+          "Toltek.Auditing.Abstractions": "3.0.0",
+          "Toltek.Http.Abstractions": "3.0.0",
+          "Toltek.Proxy.Abstractions": "3.0.0",
+          "Toltek.Security": "3.0.0",
+          "Toltek.Timing": "3.0.0",
+          "Toltek.Tracing.Abstractions": "3.0.0",
+          "Toltek.VirtualFileSystem": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.AspNetCore.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.AspNetCore.dll": {}
+        }
+      },
+      "Toltek.AspNetCore.Mvc/3.0.0": {
+        "dependencies": {
+          "Toltek.AspNetCore": "3.0.0",
+          "Toltek.AspNetCore.Alerts": "3.0.0",
+          "Toltek.AspNetCore.Localization": "3.0.0",
+          "Toltek.Domain": "3.0.0",
+          "Toltek.ObjectMapping": "3.0.0",
+          "Toltek.Validation.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.AspNetCore.Mvc.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.AspNetCore.Mvc.dll": {}
+        }
+      },
       "Toltek.Bbb/3.0.0": {
         "dependencies": {
           "Toltek.AutoMapper": "3.0.0",
@@ -3937,6 +3831,21 @@
           "Toltek.Bbb.Models.dll": {}
         }
       },
+      "Toltek.Caching/3.0.0": {
+        "dependencies": {
+          "Toltek": "3.0.0",
+          "Toltek.Caching.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Caching.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Caching.dll": {}
+        }
+      },
       "Toltek.Core/3.0.0": {
         "dependencies": {
           "JetBrains.Annotations": "2025.2.4",
@@ -3950,6 +3859,97 @@
         },
         "compile": {
           "Toltek.Core.dll": {}
+        }
+      },
+      "Toltek.Identity.Abstractions/3.0.0": {
+        "dependencies": {
+          "Duende.IdentityModel": "8.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.1",
+          "Toltek.Auditing.Abstractions": "3.0.0",
+          "Toltek.Identity.Core": "3.0.0",
+          "Toltek.Security.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Identity.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Identity.Abstractions.dll": {}
+        }
+      },
+      "Toltek.Identity.Core/3.0.0": {
+        "dependencies": {
+          "Toltek.Core": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Identity.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Identity.Core.dll": {}
+        }
+      },
+      "Toltek.Platform.AspNetCore/3.0.0": {
+        "dependencies": {
+          "Duende.IdentityModel": "8.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.1",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.1",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Microsoft.Extensions.Caching.Hybrid": "10.1.0",
+          "Microsoft.Extensions.Http.Resilience": "10.1.0",
+          "Microsoft.Extensions.ServiceDiscovery": "10.1.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
+          "Toltek.AspNetCore.Auditing": "3.0.0",
+          "Toltek.AspNetCore.ExceptionHandling": "3.0.0",
+          "Toltek.AspNetCore.Files": "3.0.0",
+          "Toltek.AspNetCore.Localization": "3.0.0",
+          "Toltek.AspNetCore.MultiTenancy": "3.0.0",
+          "Toltek.AspNetCore.Mvc": "3.0.0",
+          "Toltek.AspNetCore.OpenTelemetry": "3.0.0",
+          "Toltek.AspNetCore.Security": "3.0.0",
+          "Toltek.AspNetCore.SignalR": "3.0.0",
+          "Toltek.AspNetCore.Swashbuckle": "3.0.0",
+          "Toltek.AspNetCore.Tracing": "3.0.0",
+          "Toltek.AspNetCore.Uow": "3.0.0",
+          "Toltek.Auth.Abstractions": "3.0.0",
+          "Toltek.Caching": "3.0.0",
+          "Toltek.Identity.Abstractions": "3.0.0",
+          "Toltek.Seeding.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Platform.AspNetCore.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Platform.AspNetCore.dll": {}
+        }
+      },
+      "Toltek.Platform.HttpApi/3.0.0": {
+        "dependencies": {
+          "Scalar.AspNetCore": "2.11.9",
+          "Toltek.AspNetCore.DataTables": "3.0.0",
+          "Toltek.AspNetCore.OpenApi": "3.0.0",
+          "Toltek.AspNetCore.Tasking": "3.0.0",
+          "Toltek.Json": "3.0.0",
+          "Toltek.Platform.AspNetCore": "3.0.0",
+          "Toltek.Seeding": "3.0.0",
+          "Toltek.Settings": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Platform.HttpApi.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Platform.HttpApi.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/10.0.0.0": {
@@ -6761,12 +6761,12 @@
       "path": "restsharp/106.15.0",
       "hashPath": "restsharp.106.15.0.nupkg.sha512"
     },
-    "Scalar.AspNetCore/2.11.6": {
+    "Scalar.AspNetCore/2.11.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Sq55A++4V08c6i+o80v1pUULL3AoEWv+HJcxOhbevt3t5W9YVJEZ1BdEIEHbYZA3Otb6L6G0BurJ5xBQSM2mzA==",
-      "path": "scalar.aspnetcore/2.11.6",
-      "hashPath": "scalar.aspnetcore.2.11.6.nupkg.sha512"
+      "sha512": "sha512-Sqb8lhDTXk5eq3qxUFFlKyhskQh1tF4VlglwB6CPROkMnJjgW0ElJKCBdR16X/zYrokpYOvqHLAZ8jKETQKrpQ==",
+      "path": "scalar.aspnetcore/2.11.9",
+      "hashPath": "scalar.aspnetcore.2.11.9.nupkg.sha512"
     },
     "Serilog/4.3.0": {
       "type": "package",
@@ -6894,33 +6894,33 @@
       "path": "stackexchange.redis/2.6.122",
       "hashPath": "stackexchange.redis.2.6.122.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore/10.0.1": {
+    "Swashbuckle.AspNetCore/10.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-177+JNAV5TNvy8gLCdrcWBY9n2jdkxiHQDY4vhaExeqUpKrOqDatCcm/kW3kze60GqfnZ2NobD/IKiAPOL+CEw==",
-      "path": "swashbuckle.aspnetcore/10.0.1",
-      "hashPath": "swashbuckle.aspnetcore.10.0.1.nupkg.sha512"
+      "sha512": "sha512-CvOffaJKStoP0hdfCIX4V/9wuwRkSOJd+PehGo/Y5ALh0WYliLwuMlyh1BbgG7uQtJNe1k5P7QIhIaFfZ/aJAw==",
+      "path": "swashbuckle.aspnetcore/10.1.0",
+      "hashPath": "swashbuckle.aspnetcore.10.1.0.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Swagger/10.0.1": {
+    "Swashbuckle.AspNetCore.Swagger/10.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HJYFSP18YF1Z6LCwunL+v8wuZUzzvcjarB8AJna/NVVIpq11FH9BW/D/6abwigu7SsKRbisStmk8xu2mTsxxHg==",
-      "path": "swashbuckle.aspnetcore.swagger/10.0.1",
-      "hashPath": "swashbuckle.aspnetcore.swagger.10.0.1.nupkg.sha512"
+      "sha512": "sha512-9Kp35Jhkzw73UXnvgGWVgRjvfGx5h1V4fdL9JcPZMKoTyO/bnKD/1i86n8u2p+rVTDed0cDSH4PKbX4WicZ/gg==",
+      "path": "swashbuckle.aspnetcore.swagger/10.1.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/10.0.1": {
+    "Swashbuckle.AspNetCore.SwaggerGen/10.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vMMBDiTC53KclPs1aiedRZnXkoI2ZgF5/JFr3Dqr8KT7wvIbA/MwD+ormQ4qf25gN5xCrJbmz/9/Z3RrpSofMA==",
-      "path": "swashbuckle.aspnetcore.swaggergen/10.0.1",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.10.0.1.nupkg.sha512"
+      "sha512": "sha512-XV2gyKmjWs5K5QaSq9rNYtO/E7vr/RcyBkMbbCVUlUtI5OY0HKj260Wee9zsJ7scJf7kPCxeseBiUMRp67ZWxA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/10.1.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/10.0.1": {
+    "Swashbuckle.AspNetCore.SwaggerUI/10.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-a2eLI/fCxJ3WH+H1hr7Q2T82ZBk20FfqYBEZ9hOr3f+426ZUfGU2LxYWzOJrf5/4y6EKShmWpjJG01h3Rc+l6Q==",
-      "path": "swashbuckle.aspnetcore.swaggerui/10.0.1",
-      "hashPath": "swashbuckle.aspnetcore.swaggerui.10.0.1.nupkg.sha512"
+      "sha512": "sha512-ilUsTvGA9hO1ulR7ibdWMWSg3438Iu+pDFcEYUorp+/ClHwaHFdpp/ATfBsFXv2sIRVDbQlEwd5BWBOdMdtKCA==",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.1.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.10.1.0.nupkg.sha512"
     },
     "System.ClientModel/1.5.1": {
       "type": "package",
@@ -6974,434 +6974,385 @@
     "Toltek.Alerts.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xvKNF//S2b0FboAIkUTRscPQm2mLIirttxqDJXCQvnBtWLlYiKnT8BAvv86zWY6emfFHjkiXHIEA6Bs2CpAV0Q==",
+      "sha512": "sha512-SVmVOBS0GwVebjRPJ6rdpViuAY3M8uPJFJ6XxQAJcjDpI8b7FqoFS9JdsDxwyMdkjR00FTzWv8Vd+zcnWrC2NA==",
       "path": "toltek.alerts.abstractions/3.0.0",
       "hashPath": "toltek.alerts.abstractions.3.0.0.nupkg.sha512"
-    },
-    "Toltek.AspNetCore/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DXeZB9ucK6pDms9zMXNkrFHjmKciXV38QYiOHA/LRHpdX6jWNtS8xlE48MXNhgNJMk1c1tE04CgqPNUKgL6Bug==",
-      "path": "toltek.aspnetcore/3.0.0",
-      "hashPath": "toltek.aspnetcore.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Alerts/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xJjWZP7HziQz+JuBfI1jNLknesPuooEde3WXNsDlQx5eoQuHtiNLCQA0T5hqr51bi8HruZsFue2DwoWMQfobrw==",
+      "sha512": "sha512-nPm2480qL0TB33GdkyBnH7QkRvsaJQfbHtOhbhP+zu/es5O8ysxJzBZTAyZVjVJPazuMrGUxI3JMf0h/R+pYBg==",
       "path": "toltek.aspnetcore.alerts/3.0.0",
       "hashPath": "toltek.aspnetcore.alerts.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Auditing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4MolllRXm17rBKcDD69lKTDbsQxcexPnY63c+aO3A90KYgaZXWm5dcrgRSjhIcvifHY8otcnQl+XVahC4nDeVQ==",
+      "sha512": "sha512-2zesoc1TzSpgkbC1Su7HEjaB0Yq7habNNW/ICswADtZ+9XiTCT6CGGuIxjAu4JvRkw7WuYFsSbf6bVx5wz0t/w==",
       "path": "toltek.aspnetcore.auditing/3.0.0",
       "hashPath": "toltek.aspnetcore.auditing.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.DataTables/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qPQtEv3wfWwu8n12dt6ZLkgKf6XA+QK5ZM8u+b4LAbvAhY9Bdbk3I7/jZZXYCzu24AaD4jnFWC4igKQ7AoQSTQ==",
+      "sha512": "sha512-yu0Yr7NTnX+k/EiNT3d+eaIauS9UO7FtCuq8dZ4nFqQV2/LTqcAY+uFSae1He6p5GOAoKjJxvc8aTB/8Pwvejg==",
       "path": "toltek.aspnetcore.datatables/3.0.0",
       "hashPath": "toltek.aspnetcore.datatables.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.ExceptionHandling/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jBX0ht7p4KYAyfpQ/jSRAb6cFI16bf2uEuDenFKRKqzq6fvEZx6/ZyfTRC9Rw6kBnBEBEtU+1fKt6ZL19anBJw==",
+      "sha512": "sha512-Aizl1yCRknc1QkydkfKsjTHFnvFZM1wNLPtc/tRPqzjgPKMuhBiDPl+MYOA3nZb1TJvbi1Faj5N5VfAhALHspA==",
       "path": "toltek.aspnetcore.exceptionhandling/3.0.0",
       "hashPath": "toltek.aspnetcore.exceptionhandling.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Files/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bqyxl1jRdWQVqvC/II0LC1o5xtvR5s5fol1SdGyaHDAXT5/AYZhMlbzp3dyOGkHISFvBE9hzY8k/+aos3Pe+sw==",
+      "sha512": "sha512-jRLQeKKzSGfsjrWzSmRrJ4XUhujRc4t8d9X4LGaSiPUJTsSVjSh4rxJt2P+BRCJQRPr6iSyXuR6NGzAcbkx7kw==",
       "path": "toltek.aspnetcore.files/3.0.0",
       "hashPath": "toltek.aspnetcore.files.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Localization/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R39EOcUX+QSVytRLVum5jliLZB0UI5X4uAx3yehcrrTW99b0o7kqJWzMRkX+0f/5WUAe76Z8fQNdekakWzAKMA==",
+      "sha512": "sha512-Ck8feLcA+ClV0MWQlT6S4iN9XLtU4TJdzajNIn2Jh1yLmPATBaG4MJKRf2tNduDH3lyztsVTenIKBRjYV7OO6Q==",
       "path": "toltek.aspnetcore.localization/3.0.0",
       "hashPath": "toltek.aspnetcore.localization.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.MultiTenancy/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UNijfKMG4lZ4fDP0B98jXqvtBYPmZtL3xknd8wSByOyW+Rs87YSFL2oT5+Ms6y4yvn3nuMCur/EoYr+shdVPEA==",
+      "sha512": "sha512-noKTl3SLSZXDgA57q6LHkGMcmIPR9lVvct+hidJcNDXrl7mgxZlsUoj3FtyX26PGecZFc17ZjSQQ9HEha3z/aA==",
       "path": "toltek.aspnetcore.multitenancy/3.0.0",
       "hashPath": "toltek.aspnetcore.multitenancy.3.0.0.nupkg.sha512"
-    },
-    "Toltek.AspNetCore.Mvc/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-y56dhVxASFXl1c+W0W5Sryew923Jr64bPy0I39/z6KDHduoGQ0jXqBkUWKcC0yZrsSpg+B3XNYBLHmmtXjcwdw==",
-      "path": "toltek.aspnetcore.mvc/3.0.0",
-      "hashPath": "toltek.aspnetcore.mvc.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.OpenApi/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fuIKBIKbANaNDmTC8dJ9gdEryFeCNfDS+gimMlBcs5OrHye8mbJEBcpsEPEOKx7Blw0Z/ly2tfSi1Fvv5/Fq3w==",
+      "sha512": "sha512-kiNqX3zQKSG5e7z4MKz0JxxnNGtv/HaKgiHxRdXnjBy4FHOgoKBzs78zZAijuFfAY9J7S90sA7qsN6FylVoHaA==",
       "path": "toltek.aspnetcore.openapi/3.0.0",
       "hashPath": "toltek.aspnetcore.openapi.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.OpenTelemetry/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DCiz3zfBdzFI1sJ0Meo1/DrdQOSujBwM+eRm45viqrsSQdRlgxQrWyukxOBzsZk6tydmva0m29wj2XvzDCw5tQ==",
+      "sha512": "sha512-BQUmoxmbvAydpYqQnJCGIqjE50h4Zzox7U6KOEbKHDV0Z0WFZ5jPpf2XwAF5VNVDujpNEbFAxS8DHHGPoYBuoA==",
       "path": "toltek.aspnetcore.opentelemetry/3.0.0",
       "hashPath": "toltek.aspnetcore.opentelemetry.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Security/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eZ4VzKx2dVBeGu/hj/w9u2vpsjIqtAxjJxJhKiNibMR8k3pDU5abBAqtbfaLwy1IZvCO6gIrH8mpcPvpp7jKbw==",
+      "sha512": "sha512-z2g71LMNlvrzyVtcQq/dEWaGvtlQbsimJmsuegjO4g0pJbNRnV56R4X2zws3Opa23ZhC7PL6jtJjHo9txoiZHA==",
       "path": "toltek.aspnetcore.security/3.0.0",
       "hashPath": "toltek.aspnetcore.security.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.SignalR/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SIA7BLAXd71G5gyt432s1fvC6ibFFEgkV2AI+n1te+MkAHEmChdqDzZPXnKJKQFtShvqvMvn4ZqgDb8slVe17g==",
+      "sha512": "sha512-QXI/yeIVAVm3/2VqjdRofRAhDSmoOo9OFdtxOR7Cj7zVUHHN15Iy4i1iFV2oiRH43j+M9CAfExEzQ0pYa+rOCg==",
       "path": "toltek.aspnetcore.signalr/3.0.0",
       "hashPath": "toltek.aspnetcore.signalr.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Swashbuckle/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oKwDIiQ7zc0jjq8lGnByd2ggseVgyOrx3LvwfgO4vnvn7oJDlll32BMWgMls6uad1yuX8hU0y4zhtH3USo/wnQ==",
+      "sha512": "sha512-L/Dn/641UgSK7NloUUs2x61MV4LyTrssI9TUerEtPJE817JTjT4a1PvjBfzkn1N6+xLF9uIiM6SGtWXgeOs/lA==",
       "path": "toltek.aspnetcore.swashbuckle/3.0.0",
       "hashPath": "toltek.aspnetcore.swashbuckle.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Tasking/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mV+/JlG2dK6+ATRTyBVjabKZ3oiBczIqA6Mqll8MdW696yULIcSDzTDodpK8KbMirgejSDrg7s8+ukF11tPloQ==",
+      "sha512": "sha512-pyKeZsYd1zYNVbP6unY3JZ21MNkzSxsCAXYW0hYjPr3Nrc5BA5oWGwmYZzOImKAoPO3sw303bVVz2JjQyH51UQ==",
       "path": "toltek.aspnetcore.tasking/3.0.0",
       "hashPath": "toltek.aspnetcore.tasking.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Tracing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gkWHjFR5npX/po11f2sywk7xreJLGzM8akjXwkgBR7v3kdDZDicG/1Urg/rZ/1BUFx2Jbjoo5rHZi8HPdm5aaw==",
+      "sha512": "sha512-ynu9w4OIKDjuHadv993afaczgIhNvXx2V35QMvCnNpZ/83cpMTa8TiSVvfz5WuNzydKotybGsh5jF13dxl4q3A==",
       "path": "toltek.aspnetcore.tracing/3.0.0",
       "hashPath": "toltek.aspnetcore.tracing.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Uow/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bMXF+hcf1Q1Vnc0Khld4uoTEKtKo+hUSjcgTHQdI6aMGNvosa0NC4gcqNRPGnCN7LbN4oxHpDHJ5kLjb0v2fuQ==",
+      "sha512": "sha512-/iuCPDKMH1YCjXwI2+BKLgPhySj+da47v4cPH8JjAj8XybK6i0zlxwbmYNno3xjwcOLsfvfxPVkCeOVw2ZC2og==",
       "path": "toltek.aspnetcore.uow/3.0.0",
       "hashPath": "toltek.aspnetcore.uow.3.0.0.nupkg.sha512"
     },
     "Toltek.Auditing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-65DIgJ6H3XvSbG+G1hY5n1Y0CXPZjguwGXcJvav/gsgNfDRE2twcqvnlsfLjMgyiL3e7LQj1UY7Aiq1M9DheCg==",
+      "sha512": "sha512-TGQFUvYqE9dcWQeabmSrNxH4Bg1dVlFA1YSa2j7+vJt42d17mNKLvmdqa+Ze87R2K9ojdvgxRuUR1UjYBJYQHg==",
       "path": "toltek.auditing/3.0.0",
       "hashPath": "toltek.auditing.3.0.0.nupkg.sha512"
     },
     "Toltek.Auditing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IMDPjz4oDNMo6EaInH322GjNJEAXdhQB2tdfFykQCzAsgyrV+lThPTfnEZFaepHuIP0sSJsKdSxNHOE9+qsrpQ==",
+      "sha512": "sha512-a8QFZDYQKT2MKVIcTmc5HwU383GED0vAG0YhVTxlypfxkFXAt1K33LC2DjPJVBi9Ncl6waOjvuX1GPRxc3YCXQ==",
       "path": "toltek.auditing.abstractions/3.0.0",
       "hashPath": "toltek.auditing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Auth.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r51wxUdcqPnTUkT1HiaBJmsTefdFJyGXqewTgZPy7ll9g/rD9dPy7lrmUmNTxSWmBsUc9N8qn/QXLDUYllUaWg==",
+      "sha512": "sha512-uFd6qs0w8RbQ9olDdiywwfnqYK7I4wAehsA/soDapzd6iX99nHNVvOg5pMGMngyVU+Ak703C/C9OIrIiA+NoBw==",
       "path": "toltek.auth.abstractions/3.0.0",
       "hashPath": "toltek.auth.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.AutoMapper/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pew2Cu5exXWBEj+shN1WTPm59ZqHg8i31axJcBQhDIzJ765Z7SCXrKoua1V09B/n1d2XOMZ0gO2nWNSeHZ7NRA==",
+      "sha512": "sha512-ElGMD0K5DeBl/8maDCRST93LXQnJqjSs5Dxa4rciZsKXBpohttuJB7syzD7okPxjZ8MYa8HupkPvhw021YS02Q==",
       "path": "toltek.automapper/3.0.0",
       "hashPath": "toltek.automapper.3.0.0.nupkg.sha512"
     },
     "Toltek.Batching.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M29KeK2Xu92D8y4KjLuCfJV/8Jpwdp/tIAkIKIWFvjIZj3T1U2lVxnsMx/Nj+mUkq91LXuoYUZadq6/fj6SCNQ==",
+      "sha512": "sha512-W5GnHAk1JomrjrbJXKP4DvLTkLIMXtmctKUUNOeNRhcr6NpLp462RRM/fZWYa5Eh0svXM/j/g0zm+jHyiVv+Ug==",
       "path": "toltek.batching.abstractions/3.0.0",
       "hashPath": "toltek.batching.abstractions.3.0.0.nupkg.sha512"
-    },
-    "Toltek.Caching/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rEIeDYT2Z8udOBaU8oY1hHy/XK5vt3UTYYcr+qtQTb2rXMH5Ior0tww/smJJF8VDw90WvesYAsnCqmHKr5m0oA==",
-      "path": "toltek.caching/3.0.0",
-      "hashPath": "toltek.caching.3.0.0.nupkg.sha512"
     },
     "Toltek.Caching.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Tg4vmearm1MgC5qmtol8M/oxn+mqVz2OHazvx6DIN2jUrac20CYZhDSkvZI2yDyLeye6+pM3+qmjdcez9j6FBA==",
+      "sha512": "sha512-RMzI8KdYnPK6ZYhCKwC2gh752JZVkh78qFODm1rK/1X5MSR/HhgeaNXM0t/xaO+3btcguZJlDqxk5VyQVbUkHw==",
       "path": "toltek.caching.abstractions/3.0.0",
       "hashPath": "toltek.caching.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Charts/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sHXM6EJWlZJxEy3gdYJEpQZgqjdPEiNeDGalCbFCYiQWWIRxrHo+Nhji7VJPeykWHjeoIOrr/Nj3lrYV9qBP1Q==",
+      "sha512": "sha512-sXy/m7S4zljF08xBDB4gAdeiaBwFpqhjO3y5IENRGTirYv+ToRL1h31p/dDiTtUDuCl0D1md7epAiS0sDua01A==",
       "path": "toltek.charts/3.0.0",
       "hashPath": "toltek.charts.3.0.0.nupkg.sha512"
     },
     "Toltek.Data/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-66i9AZx0Fg7gQPZuuCyHo+6yWtVeyh5c3B0uATxon+HZdmr0jGucvLARgqB11GV4kVRiLzfnvxHFkO0mIOzS8w==",
+      "sha512": "sha512-mhvRtNefQO/4hmneGy0CJPA391bbn0Lt7jAoqW8IFpNKxU5odmN+D2JUlNagBtSe8Zt7x7LJrJLGAd5BTuAdQw==",
       "path": "toltek.data/3.0.0",
       "hashPath": "toltek.data.3.0.0.nupkg.sha512"
     },
     "Toltek.Data.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e9q7bRVEKpV1Y+FSXq85HWNh9FCuvsLzMogAnCQV+UFQfgsdyb0SS/AcyrE3BxtTIYMmPQ7RB4r57veYDjQlBw==",
+      "sha512": "sha512-qNHwpqiw+3AiasE2I9qeIO2kP3MqBTyGJKKeW1UqkpqQW3K6sWZdoCad6OkeB/Gl6+gRak5iZWdAm5Fm3ywEuQ==",
       "path": "toltek.data.abstractions/3.0.0",
       "hashPath": "toltek.data.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.DataTables.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wzAp34YonxjF/pvSqsoQuww8yYWhjwWZlu1bQWkt6Ujdf8N3Iuxv1+1/Wfn1k3mkQHWRy1JJa/CHH6ZndckfFw==",
+      "sha512": "sha512-2QahbKDKOZ2YxwbON3Xl/0tPnCl/JrNIi2fml3nXNEPCPlLg+Ci2Qhni1yOMG80/dAxx3tWtp9roGQioWIT7dQ==",
       "path": "toltek.datatables.abstractions/3.0.0",
       "hashPath": "toltek.datatables.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.DependencyInjection.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WWlqiuUS1xFagL5r399hGFEnlAtd/i5+kur2X2qUXCik/d7JYoi+9n/MpUZXbTcdt1VZpGUFRkJ5wIbxu/zICw==",
+      "sha512": "sha512-OpZasmV2ePOIVKjgWw7qWLzH84zwxPO47j8hwZHNtt9dgv1oK14NNMruDoUBEvAFOy+RnHGEH5rfS1dbTv7VxQ==",
       "path": "toltek.dependencyinjection.abstractions/3.0.0",
       "hashPath": "toltek.dependencyinjection.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Domain/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lTE99ONCb5XCxa4A9xIUllGvOq4Fnr4Oui0oAVJwjSHTze7vtDM73OHkd8YhvRm3IGefeQnFVCIwKAMhgnNDpA==",
+      "sha512": "sha512-7eFSwQovRhh+XDf9w62+FbBhEIkye4SoGlE7UOIzLUx0erCrx4+umuhPuo1SH2gQiqcJ4BmJHDi/BzUUKfz9Fg==",
       "path": "toltek.domain/3.0.0",
       "hashPath": "toltek.domain.3.0.0.nupkg.sha512"
     },
     "Toltek.Domain.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jMyCN+PV6u8ZdMcKR75V8Xtk6R84CcYStPHqbQuSO5XCzUiwy+2AdX0499JZGvhIei1EuD4VYKD4jdQIXGB9Bw==",
+      "sha512": "sha512-IWq8Wni/VVcuMBVpJ4DvSTtoZkgSA+2IShWKlFUFP5YNWhCRbsL8/uXo8SqTDnYvMadq4ohJVjfC0L2+1r6qHg==",
       "path": "toltek.domain.abstractions/3.0.0",
       "hashPath": "toltek.domain.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Ef/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iUeDFSqJS57K4xt8bmg8J55JXX06A7iURykXgs5FSURI64XIlNRuK0NPDMyFQPi+BwNrmP0ibWW40S/uf0y8zA==",
+      "sha512": "sha512-Tw+yPJcoTWnYOJTzRc47p19RqVdc6L2k9hRyMvAfLIXjPqwGfeP5nCyHJrXW8/CsaAesqFpu6Cg0C2EgRcu4UQ==",
       "path": "toltek.ef/3.0.0",
       "hashPath": "toltek.ef.3.0.0.nupkg.sha512"
     },
     "Toltek.EventBus.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/JTAMAqLfOOJGfuh322GByYLSJ+5fVGUwvCVZazkrbtjxmPfWJ6jN+qaKxeK1ctwAT3BqHG+THXLv7hdsJEttA==",
+      "sha512": "sha512-uN7gUyQiGuCreGYd3f9kdf7Io5XQ72LNsATaXPQNDaFnXkpgJKLyK8DmdkN+9sX7g1fpw4S5bDsvvgEHUnCnnQ==",
       "path": "toltek.eventbus.abstractions/3.0.0",
       "hashPath": "toltek.eventbus.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.ExceptionHandling/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aEZ5uUk1Rs+fd820PmS8233s7PiP61yjYDzymBVX/BJHnmdY92PUdWbbFrIBjj1Saxe3TrvNuxhy9EvdlGw0oA==",
+      "sha512": "sha512-8/PU6F8Dmpc562sCx34gjiyHrx3Fyb962c0YLXpJGPezpunDWZkpYHnRJ+RntgIGdII2HT/it/HQgJYJZA5gbA==",
       "path": "toltek.exceptionhandling/3.0.0",
       "hashPath": "toltek.exceptionhandling.3.0.0.nupkg.sha512"
     },
     "Toltek.ExceptionHandling.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NqbzpRmOwDiGOfyBdWBzZ4QkHbEw6kQdALz7Rd2OFLGRzV/ufWjLFgD2bvC4uglwEdq1bRLSNsDwSrvTYHdIgA==",
+      "sha512": "sha512-9JZqqCltV10W78sdTWEB3aWPP7480wVj8EWQtELbbM8Tz4qfQup8vYG/je9cvrJY/X0rP8CZnIZsdOS9pO27PQ==",
       "path": "toltek.exceptionhandling.abstractions/3.0.0",
       "hashPath": "toltek.exceptionhandling.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Exporting.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VE8LZK4HpNfd4yLEfJ9vj8w3mpH8UyEbdYPFaO9o4GlzgW8uErsIUDULYbfug9olcZNtfusMtpAPtBq/OiexGg==",
+      "sha512": "sha512-slWipz2GYsDDVlIv4FpRHg8PhsLxvdJ0am2qJS9QZRUNV8dwvACTwAXQNj57IeSu1z5m3ifNhzK+AmYkyz9SZg==",
       "path": "toltek.exporting.abstractions/3.0.0",
       "hashPath": "toltek.exporting.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Files.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NelFL1dPCpOp0IFGlxxzHslPknIQkzLlc0C1svcPTYsTe1rUsVMwmVLVOSGrsn1jSZnu7qLD6LbaOhOpo7zZ0Q==",
+      "sha512": "sha512-k+nYITCsXsIKYLt0f8+15vESzlJwPxyiHqlQwNfOZaASLt+gP4ZDjkWGDc6a2iJBGUp1deVoVpKNGIgO8UnnUA==",
       "path": "toltek.files.abstractions/3.0.0",
       "hashPath": "toltek.files.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Guids.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7zyKpz2nRuiscmWVgAlPVeBf86Hbd78B9tUoTtN0d0bBb/w9DOhCMactD3FkUZBKgcE+I9P93p9YqRApGCz+0g==",
+      "sha512": "sha512-MPv5PSmwa5ZBk5VrE5LvvSz60OkvvmTb5ZTs49a1UpbKTT82SElJvRGFtdI7Jwg2SWqRu7BV6rUA0vb45sihXQ==",
       "path": "toltek.guids.abstractions/3.0.0",
       "hashPath": "toltek.guids.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Http.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z0rn/F6aXS1WDzQWIPR/vMQ8gopHudP9oQ4dkHefgM2RlrWDRU6xkKeWOzGFLgphDG1Y0QRIYUwgOwthNhiI4Q==",
+      "sha512": "sha512-YlI5RdY0i3/d+Voi3Q1S4OvLbi4m79mraRCjGYWwFY36UKbnOGi/YY6blJhYC8P3evoKSRe8PNhc6KOCY5EKMQ==",
       "path": "toltek.http.abstractions/3.0.0",
       "hashPath": "toltek.http.abstractions.3.0.0.nupkg.sha512"
-    },
-    "Toltek.Identity.Abstractions/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+8SzRBOX9+I0QgkVYCzo+To2MRnf4kSQ0rK9f4st56VwCjZJ5B8PbMtGMQkBO0I5nsofV3Qx9pIVxmXQspyQEw==",
-      "path": "toltek.identity.abstractions/3.0.0",
-      "hashPath": "toltek.identity.abstractions.3.0.0.nupkg.sha512"
-    },
-    "Toltek.Identity.Core/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+LKvPTNzuPgOUqA0DedLN3XKt+pGOvQPBL9mViOc/KUmdpShEeOkCLokEgYEftglg8AAtHMrNBD5E1Iwn9AtIA==",
-      "path": "toltek.identity.core/3.0.0",
-      "hashPath": "toltek.identity.core.3.0.0.nupkg.sha512"
     },
     "Toltek.Importing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2gsr2u9sVZebGe/0Qj6ensFVKUtj4D5nFh1oc6V/KZokEYEB/5VZLGsQHuG77dAIAHkyWdD0Wo6j90PSe6qfSQ==",
+      "sha512": "sha512-FzjoYc4jIM1RHQt1qJ80upZZL+UTiJIFMn5PZ90O/RpJn4DWzXrigE6SFbLg1H9pKvacpskijXpuO4JLyu8kXw==",
       "path": "toltek.importing.abstractions/3.0.0",
       "hashPath": "toltek.importing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Json/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L1b6OKi0RLbEc5PhyWaeFOXEAw59ZneXRpo2nxOXMrIOlRu6zhXp/eZ4p3Xi0uFj3tQeLaTpGofHmIxiEpviVQ==",
+      "sha512": "sha512-G+1ecCQg8OMrkZ58tCmfwhsEqeQ/KYfsJn1v6z4ataRgESJWGM+ZpLS4Fq9eSSFDzzkIOzI4JfB3465pex9nDA==",
       "path": "toltek.json/3.0.0",
       "hashPath": "toltek.json.3.0.0.nupkg.sha512"
     },
     "Toltek.Json.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9lWcRTZGxAIh2cnWRLCoZLewHlmd/6DP7kkG542H0zkLObIYl0dIv+iqQ44wbPEV9kypOfE6ZcXw8RYKva8OEA==",
+      "sha512": "sha512-PqqJ7nfFqueG4N30OvPOrkNxiZisGjgQQqoc3tsnxhstHfKhsKRJEAoKiNH5KSPJ/1d8dzXJW2koH6ME9ZQOxA==",
       "path": "toltek.json.abstractions/3.0.0",
       "hashPath": "toltek.json.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Localization/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NrSTfj1EUpnbYPVFspIiGfOfq0aJmaHysZJIulMs5/oHYdoi0wmlqV4h9SRU0g9ssqI/xYaa6Ydb2ESI4eXe3w==",
+      "sha512": "sha512-J+k7gmbADvVfQvacje+HvG9uZ/LXxN/r2WoUUnNbGNUJkD1pagyKIaH8/WG+Er0oFpk8MJM3WEiQMncito5TBw==",
       "path": "toltek.localization/3.0.0",
       "hashPath": "toltek.localization.3.0.0.nupkg.sha512"
     },
     "Toltek.Localization.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-C5RNbRc/MzIFKL1s+eclSmcxxdiR40ykAgZK4NRdlEMrZ7N9yaGRIVikBb5CCyAv+WPOFAt6nsmY2hzWTSxT5A==",
+      "sha512": "sha512-m+ov5QhQ20PE7u7NtC2NcS141c+rZwV5PcMfYr1sO6sSPTmeikde/gTLdWFGSi+Agv5QYApzU9XrzIbKM038Ig==",
       "path": "toltek.localization.abstractions/3.0.0",
       "hashPath": "toltek.localization.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Logging.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8mfQP/A2/7x9t5aiID+LXLFA4O8p9hsyp6Da6j0CB2r3JH1k2sB+6LUBBC8yJ6GH9MUDLx9EWWnwaTHzuexLnA==",
+      "sha512": "sha512-PU6W50QkkGlhdgKr8TTt72MvSAOlhfEWdT4wuMjHlzJIQ8QqWRzmhXqkST3k6FmNRvPM/T686dGOZegXFz7BHg==",
       "path": "toltek.logging.abstractions/3.0.0",
       "hashPath": "toltek.logging.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.MultiTenancy/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c11AxZ8GtaKVgW7s921Qr29IDoPD9lL1t+2PoETZqZGLoD2EsoXLhb6TcrTbUqcA87PV6n2dQDYQMJaKyoigGw==",
+      "sha512": "sha512-eaB+Kt1BOQbK8J1ndy3k2mUDGSWcrDooEE5UbzD1vZPKx8u30dMzIPMUwYrwVGH8H8kg2D7xidEe9XeGdNMyzw==",
       "path": "toltek.multitenancy/3.0.0",
       "hashPath": "toltek.multitenancy.3.0.0.nupkg.sha512"
     },
     "Toltek.MultiTenancy.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Sns487k3oU2SlhXRdU2pYDJyno680O1KX99qw1JUWXO50z0E2zHN37llzL1JsliEpqFw/h6JHEZVUBDxV4EUKQ==",
+      "sha512": "sha512-Xg58a7bgkiL5qZtYBj2pgrExSYTjcttza3VUxZ1xdH3wlfo8PBv/AZhHadACVnPdFy6C48WsYsH8fAtSiGpldg==",
       "path": "toltek.multitenancy.abstractions/3.0.0",
       "hashPath": "toltek.multitenancy.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.ObjectMapping/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OVtf+oxcDuUYjMhbNEIMCE4DJXQ7NSwhrmVbDXj/O0PHOLKZmYVgVizLgB3RbAt90JIEzeiKmnruNeHKOG1SKQ==",
+      "sha512": "sha512-sLEOqjmNrXXRQuMj0MRDBsjSD6sWbilk3XE1K39OLvLYDWBTAbDMFriw7MPdC9JUn3qWIQeD5EydGAdSS/iSYg==",
       "path": "toltek.objectmapping/3.0.0",
       "hashPath": "toltek.objectmapping.3.0.0.nupkg.sha512"
     },
     "Toltek.ObjectMapping.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xI2egbPgdlLkzbCh4ihKCaWQgwhlT2bUi4DzNAXRIcsW5AdzqbdIDqxB9zLEs2e1WCXyyOys2TyG9vQWzM5XTw==",
+      "sha512": "sha512-Ftol3LgtqdDfJJZwefLnTt2olDfHQhSryvxZlQAAJDHJ/R+kS24Gcuh4UB/4glVj8QST8VUBiBXpQeh0wo3AXQ==",
       "path": "toltek.objectmapping.abstractions/3.0.0",
       "hashPath": "toltek.objectmapping.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.OpenTelemetry/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qZpT7Wnn8Vx94bzMN7dL/0CEHThojWArPGGmCUYRgXh9QJBpxnuu8YDcNl3R4XaXBPCuvSfC+psbl/2s9ceGEg==",
+      "sha512": "sha512-y72BhYnZrCrIv6MUcxJdo53RRnk78hwSdqehfFqdgg6AvQbz29OJHjU9NB2f+23B90nDtXZil1q/lM0fLY+htw==",
       "path": "toltek.opentelemetry/3.0.0",
       "hashPath": "toltek.opentelemetry.3.0.0.nupkg.sha512"
-    },
-    "Toltek.Platform.AspNetCore/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FouQNMhQv2O1vm6uYXXkoHCxkoaOTA5Zx2Jcw1Xlmdeb8aQAIOv3ebE6qsKPsCR0QVApfCYUToMlwDqg/4yh9Q==",
-      "path": "toltek.platform.aspnetcore/3.0.0",
-      "hashPath": "toltek.platform.aspnetcore.3.0.0.nupkg.sha512"
-    },
-    "Toltek.Platform.HttpApi/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7N1Vc93Q9QCFa8em5Vc973qHEcyrarYXR4eSOwq3eNUsevXdu1MRObWdfrPbNsZjF7scsseY73B5d5B6Drfc+A==",
-      "path": "toltek.platform.httpapi/3.0.0",
-      "hashPath": "toltek.platform.httpapi.3.0.0.nupkg.sha512"
     },
     "Toltek.Proxy.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2RFbbigQGuKX+R38ymI8Q8LLGp6lCgsMsEgvJ6bqeutTKjGUMAZ980ZTy5yD4MZ7s8wx31X8x98y1j7wjtz6gg==",
+      "sha512": "sha512-N7CQqlt0/D/9hIjJVPwUSK+d1QwpcZQ3GYl5/Lnk+g/i7du5HWVGa2cO8YW3gSazmGUukqx/3yH6ZvpyGa1bZA==",
       "path": "toltek.proxy.abstractions/3.0.0",
       "hashPath": "toltek.proxy.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Security/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xlYp0ZgRZPPnNjV3M1Wf5TaRWeJMJOareTBZAU+heJ1EO/FQ2/IlxY5FhmI/3CKkmEDq3UE/fLPG/FUMOVVLMA==",
+      "sha512": "sha512-Zp+UuGBGJxAqqhIvz2+O/vdKzIMBbyHQFFlG4cmPVsFV7Eg+rhrU+SDM2Jf2BdHMSmZUsDlnbChPSOcxXqDkBA==",
       "path": "toltek.security/3.0.0",
       "hashPath": "toltek.security.3.0.0.nupkg.sha512"
     },
     "Toltek.Security.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wkq3nmsMS8Xvs6H4Y/tq/Xm8HRQXV8Irz4zQp3QVmt0z8/NNz9lBvivBQU31j/QJAyp5nW75/ObL7J53/l8c0Q==",
+      "sha512": "sha512-zcVDQYEb0sqRWnczHtOG3Pxc//h67mcGYwShG/BQ15DVgpv4NJHMy5SkkMV/skw1y+HjFuXPOaXVqw9iiqILWQ==",
       "path": "toltek.security.abstractions/3.0.0",
       "hashPath": "toltek.security.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Seeding/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-As6+Gnu4CBYugnjCOiIbKrPRWNvzCBNLd4MBPwWcZOnC0cFsm8CbB8ABa5P+g4azlRueaxWbQarYW1QjYFp/lA==",
+      "sha512": "sha512-R6hc1c2yXeKXM6Kv3qjm40+AphPH+uw+hc2XEj2txqmfcfCdRm+ZIJzISm7IpoWcDoFxvfBDDHTnp5EbZfGGuA==",
       "path": "toltek.seeding/3.0.0",
       "hashPath": "toltek.seeding.3.0.0.nupkg.sha512"
     },
     "Toltek.Seeding.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EdlYErI08jOfiInJrmEtg8yNmcEQ6Ci1DFmDha7l6MxNcWZdxolqyCbXGB7Mk1Ha2tImPShmI5divp/lFomc3Q==",
+      "sha512": "sha512-bnkaS0fa/SdHrRlMyyG/wMai21csAkWISUp4+jltNQIhhvQXPJbZas1fbNVOfu3X9dlTphkvYvVZvOr1j11OFg==",
       "path": "toltek.seeding.abstractions/3.0.0",
       "hashPath": "toltek.seeding.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Settings/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-le0WbYDPhmjpYKhLzrJE6dQL/6Bi7TJxcCvPxTJBt8gvZ3kBUjKvJ6XX8zMPZgaSPLKPrTxKFegd+BWvZ/r4qA==",
+      "sha512": "sha512-8iZI3xHMZz/wf62Wh/b8oIUPjRsAZ93vNFA3BqkyCTDP2nLO2YmWkDQ2gtrvYz+Wjt7wKWlTeEIjw+6nrgN03Q==",
       "path": "toltek.settings/3.0.0",
       "hashPath": "toltek.settings.3.0.0.nupkg.sha512"
     },
     "Toltek.Settings.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yNHmHhC60V0FjUeBQ7Tw7Jin+ooCahbP/qw1OYAytwJgh9BCASWu2sF1ifG5lHuYlsIu+OcCBa26WIlyaG5UcQ==",
+      "sha512": "sha512-fzVE0qhuRoRl8jKWcAkvMsOUvmGlLCGLjV1oyLYdbmRm8vvNof2YqzBprLbKXZsI5BFYbed6jiHr2o0AwvX8Fg==",
       "path": "toltek.settings.abstractions/3.0.0",
       "hashPath": "toltek.settings.abstractions.3.0.0.nupkg.sha512"
     },
@@ -7415,77 +7366,77 @@
     "Toltek.Tasking.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J3VRGcLZ+jx+RFrD5W61W4jhDtwskJPiq4MOKj+6wutv9jmb9JCxCa9yBgE7iUY7Ap/B0RnGs+XwNZ5WZTKaDw==",
+      "sha512": "sha512-OWScRaljT8SGB0dS/MYE3U0U+gmO+FlNP9CdcOhuwVPWRNcrE5tGvMVGK4JLtqMXsk9R4DZX0wA4fvWa0iwuEg==",
       "path": "toltek.tasking.abstractions/3.0.0",
       "hashPath": "toltek.tasking.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Threading/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XCcli2DrOQ0tUnfsSmXMSiVArpDOO5sBOUQ4FaCd71sqEERbjy61z8pPlChtMG1VeJWP5MJkAhDc/DrPDsfqjg==",
+      "sha512": "sha512-/IyX5Uy6h1uk4l2nW1U6N4p2UNNcKE6osNZtIyiDB+eyGJYsrfLOMYwlycBAC0XC0b4SfcXpRe2qNqDiTCL7UA==",
       "path": "toltek.threading/3.0.0",
       "hashPath": "toltek.threading.3.0.0.nupkg.sha512"
     },
     "Toltek.Threading.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EOW7RnoPtuAY3NMrZseETP5btqKu3uCq2Soc/UMnSU9tiXnYsgPp6mnigGOnz+cyaLb5SnkuH0ommdIFDKZULg==",
+      "sha512": "sha512-0xQzFmWYnIVJzQssZv2YGAnIsRGFkbW8vMVqrU56pEL+ecP2tL117SCnnnxgApB9/3Jb9F9+ON36Jt8f6aRdJw==",
       "path": "toltek.threading.abstractions/3.0.0",
       "hashPath": "toltek.threading.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Timing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oNHi+F7+KTq9S949KJ0Kj5sd3LZe1/HjgE32NdZ4kqL6Lfd2xA4WpcLp9cfcHbkJh+LH/hBvrPNIbMgcxypJjA==",
+      "sha512": "sha512-oBV5jpQTVPiFr/M0rqtY+0q4x+RXSLsxzJaEd+3Yo3gHm+4J677P8wB6o3OoQ2noQ9+B6GPtXzbQZVXpKcBI6w==",
       "path": "toltek.timing/3.0.0",
       "hashPath": "toltek.timing.3.0.0.nupkg.sha512"
     },
     "Toltek.Timing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oupzD/TUOakyVbIKsFYfBKQaObJGINZysoR6HWWO8gdL9SNEJkLFR7qSnSpNaRFloX48nz4YDqxZwX5XmbGI1w==",
+      "sha512": "sha512-vcB6FDfToZphUPf5VtpYXbeDBiq0QD5kh8uC2dI9Bn+vgTpzouf7CLtjrF8konQmfZbCRChwg72vKpTWGeofYA==",
       "path": "toltek.timing.abstractions/3.0.0",
       "hashPath": "toltek.timing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Tracing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oV46eZ4R5L0NRgm6WBuYWRKVVqPVUZhLNuxluak0n/5a7tXdZE8R/Em+XpQoJBrtt9gNUNUolPHjggNzmV2DjQ==",
+      "sha512": "sha512-b1SPrr9VIHGJiFzUE4x+S7onj2I6REiuZ5w796WrD+i6kwlnXUdaezySkZF/fqU/CiJ5FH3Xbo1xGCQ75mT9GQ==",
       "path": "toltek.tracing.abstractions/3.0.0",
       "hashPath": "toltek.tracing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Uow/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZGDXmUykNe4bTGy/DwKxWFCuagnQGBCZ+1gq4qE95dZDSbZJnb5KsLKfOCd6eETxK8xR1hyVYPpjgYTBRvZNzA==",
+      "sha512": "sha512-DtL2z8hY4bNZabiC1Q+8w9qH8drMOLZCK8QyN4y+C9FNm4QFpa8N7yYVh6dmlQJPUGZzVYCCZQXHAo2YMrAlRQ==",
       "path": "toltek.uow/3.0.0",
       "hashPath": "toltek.uow.3.0.0.nupkg.sha512"
     },
     "Toltek.Uow.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pjnrgWVIQa3DePLW2N2flQVvAiwXc5aEGPoahZZiT+YJAqltuYDahXexvMPD5VESRqLmOaf2n4bKUN3qlPVqQQ==",
+      "sha512": "sha512-vrv+MP+KO/vTVRQ/rckL30asNzKFmX/dLgD8joyQzaRafEFeeVkU1+CR/cZyF98Bod7yC9NRzIwkwGk2H0QIvg==",
       "path": "toltek.uow.abstractions/3.0.0",
       "hashPath": "toltek.uow.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Validation.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NDALJ6us2a1lTvrx9tk+2GWYATIa660wxDR5gteZF/gJoODfew8On6sACQW0ljda3uC5T0XKZLtGpxEkhhaemA==",
+      "sha512": "sha512-UYWeqO2LiFk+l5hcF4vZyvGNl+3XnJCoJRa+qLjG49RwLBmvgqM7ecHWDCNEXwgmlOfQSPfC5AexX3mXLNvs8Q==",
       "path": "toltek.validation.abstractions/3.0.0",
       "hashPath": "toltek.validation.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.VirtualFileSystem/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aZuGyqQ0v5gK0yJnNfbA6E5IgZZO0Ep0My23ygdYm7fWNKtwbvC8f/r8zfQUHd94jaHIHMeDXGEgddsQcrfXHA==",
+      "sha512": "sha512-eG7R09UlzlLaReN64SgD3k+zVr1PuDPiljkucpn3h0JPYq6JeDuaRvWj1y/u/4mYi8YYQzxPxeBgKoVCEmhozw==",
       "path": "toltek.virtualfilesystem/3.0.0",
       "hashPath": "toltek.virtualfilesystem.3.0.0.nupkg.sha512"
     },
     "Toltek.VirtualFileSystem.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kofwBjneTH+jRQowQAEb9yrdePRYZ+w26yUHOYGmXU7qIq7D/Q1VRtqQ0h61uSvEjpkbnTr+BXal+YL1sFZWWg==",
+      "sha512": "sha512-tJXJMYq8fO33MosWQC/7OrS0Fjl3FS49ItqmS4OGe5Z7v4pfo6m9kAVGV8fub8Vuhbaqn377Ub9aK6SOxO7JXQ==",
       "path": "toltek.virtualfilesystem.abstractions/3.0.0",
       "hashPath": "toltek.virtualfilesystem.abstractions.3.0.0.nupkg.sha512"
     },
@@ -7504,6 +7455,16 @@
       "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
     },
     "Toltek/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.AspNetCore/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.AspNetCore.Mvc/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -7548,7 +7509,32 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Toltek.Caching/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Toltek.Core/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Identity.Abstractions/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Identity.Core/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Platform.AspNetCore/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Platform.HttpApi/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
